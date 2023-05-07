@@ -1,0 +1,31 @@
+header {
+	display: flex;
+	flex-direction: row;
+	right: 0;
+	left: 0;
+	font-size: 22px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	li {
+		display: inline-block;
+	}
+	li + li {
+		margin-left: 80px;
+	}
+}
+
+.break {
+	width: 1px;
+	height: 48px;
+	background: var(--n7);
+}

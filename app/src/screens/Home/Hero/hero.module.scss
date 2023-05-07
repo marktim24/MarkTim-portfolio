@@ -1,0 +1,46 @@
+@import 'src/styles/variables';
+
+section {
+	color: $white-color;
+}
+
+h1,
+h2 {
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 90%;
+}
+
+h1 {
+	font-size: 170px;
+}
+
+h2 {
+	font-size: 75px;
+}
+
+p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 140%;
+	max-width: 50%;
+}
+
+.description {
+	display: flex;
+	background-image: url('/hero-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.credits {
+	display: flex;
+	flex-direction: column;
+	*:not(:first-child) {
+		margin-top: 115px;
+	}
+}
