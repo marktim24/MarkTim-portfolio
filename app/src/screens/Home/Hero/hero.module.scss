@@ -14,11 +14,11 @@ h2 {
 }
 
 h1 {
-	font-size: 170px;
+	font-size: 140px;
 }
 
 h2 {
-	font-size: 75px;
+	font-size: 65px;
 }
 
 p {
@@ -26,7 +26,7 @@ p {
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 140%;
-	max-width: 50%;
+	max-width: 100%;
 }
 
 .description {
@@ -35,6 +35,19 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	justify-content: space-between;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> h1 {
+		width: max-content;
+	}
+	> img {
+		transform: translateY(170px);
+	}
 }
 
 .credits {
@@ -42,5 +55,16 @@ p {
 	flex-direction: column;
 	*:not(:first-child) {
 		margin-top: 115px;
+	}
+	width: 100%;
+	align-self: flex-start;
+}
+
+.experience {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 40px;
+	*:last-child {
+		margin-left: 40px;
 	}
 }

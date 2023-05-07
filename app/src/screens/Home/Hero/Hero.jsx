@@ -24,9 +24,9 @@ const Hero = () => {
 						</p>
 					</div>
 				</div>
-				<div className='experience'>
-					<img src='/total-experience.svg' alt='' />
-					<img src='/projects-count.svg' alt='' />
+				<div className={styles.experience}>
+					<img src='/total-experience.png' alt='' />
+					<img src='/projects-count.png' alt='' />
 				</div>
 			</div>
 		</section>
