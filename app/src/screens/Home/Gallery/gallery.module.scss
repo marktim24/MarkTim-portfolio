@@ -2,6 +2,7 @@
 
 .section {
 	padding-top: 64px;
+	margin-bottom: 50px;
 }
 
 .wrapper {
@@ -11,6 +12,12 @@
 	margin-top: 48px;
 	padding-bottom: 48px;
 	position: relative;
+}
+
+.head {
+	h2 {
+		margin-left: 320px;
+	}
 }
 
 .nav {
