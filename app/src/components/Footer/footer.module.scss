@@ -1,0 +1,41 @@
+@import 'src/styles/variables';
+
+.footer {
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80px;
+	width: 100%;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	> a {
+		font-size: 26px;
+		color: $black-color;
+		text-decoration-line: underline;
+		&::before {
+			content: url('/link-icon.svg');
+			margin-right: 8px;
+		}
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.nav {
+	li {
+		display: inline-block;
+	}
+	li + li {
+		margin-left: 80px;
+	}
+}

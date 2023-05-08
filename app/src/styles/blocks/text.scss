@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Monument Extended', sans-serif;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 90%;
+}
+
+h1 {
+	font-size: 140px;
+}
+
+h2 {
+	font-size: 65px;
+}
+
+h3 {
+	font-size: 38px;
+}
+
+p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 140%;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (max-width: 474px) {
+	.hero {
+		font-size: 48px;
+		line-height: (56/48);
+		letter-spacing: -0.02em;
+	}
+
+	.h1 {
+		font-size: 48px;
+		line-height: (56/48);
+		letter-spacing: -0.02em;
+	}
+
+	.h2 {
+		font-size: 40px;
+		line-height: (48/40);
+		letter-spacing: -0.01em;
+	}
+
+	.h3 {
+		font-size: 32px;
+		line-height: (40/32);
+		letter-spacing: -0.01em;
+	}
+}

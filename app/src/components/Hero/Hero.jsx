@@ -3,7 +3,7 @@ import styles from './hero.module.scss'
 
 const Hero = () => {
 	return (
-		<section className={styles}>
+		<section className={styles.hero}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.description}>
 					<div className={styles.title}>

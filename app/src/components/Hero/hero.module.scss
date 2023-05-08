@@ -1,32 +1,8 @@
 @import 'src/styles/variables';
 
-section {
+.hero {
 	color: $white-color;
-}
-
-h1,
-h2 {
-	letter-spacing: 0.075em;
-	text-transform: uppercase;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 90%;
-}
-
-h1 {
-	font-size: 140px;
-}
-
-h2 {
-	font-size: 65px;
-}
-
-p {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 30px;
-	line-height: 140%;
-	max-width: 100%;
+	margin-bottom: 70px;
 }
 
 .description {
@@ -36,6 +12,12 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	justify-content: space-between;
+	@media (max-width: 1200px) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 40px 0;
+	}
 }
 
 .title {
@@ -48,6 +30,15 @@ p {
 	> img {
 		transform: translateY(170px);
 	}
+
+	@media (max-width: 1200px) {
+		> h1 {
+			margin-bottom: 20px;
+		}
+		> img {
+			transform: translateY(0);
+		}
+	}
 }
 
 .credits {
@@ -58,6 +49,13 @@ p {
 	}
 	width: 100%;
 	align-self: flex-start;
+
+	@media (max-width: 1200px) {
+		margin-top: 40px;
+		> h2 {
+			font-size: 36px;
+		}
+	}
 }
 
 .experience {
@@ -66,5 +64,9 @@ p {
 	margin-top: 40px;
 	*:last-child {
 		margin-left: 40px;
+	}
+
+	@media (max-width: 1200px) {
+		justify-content: space-between;
 	}
 }
