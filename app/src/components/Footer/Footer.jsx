@@ -14,6 +14,7 @@ const Footer = () => {
 				</div>
 				<div className={styles.info}>
 					<div>Mark Tim Portfolio 2023 ©</div>
+					<div className='line'></div>
 					<nav>
 						<ul className={styles.nav}>
 							<li>About Me</li>

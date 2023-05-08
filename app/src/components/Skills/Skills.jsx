@@ -7,6 +7,7 @@ const Skills = () => {
 			<div className={cn('container', styles.container)}>
 				<div className={styles.skillsName}>
 					<h3>Skills in development:</h3>
+					<div className='line'></div>
 					<ul className={styles.skillsList}>
 						<li>WordPress</li>
 						<li>Figma/ Adobe XD</li>

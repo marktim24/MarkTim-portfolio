@@ -1,6 +1,6 @@
 const gallery = [
 	{
-		title: 'Life',
+		title: 'Graphic design',
 		galleries: [
 			{
 				image: 'images/01.jpg',
@@ -65,7 +65,7 @@ const gallery = [
 		],
 	},
 	{
-		title: 'Videos',
+		title: 'Web design',
 		galleries: [
 			{
 				image: 'images/16.jpg',
@@ -130,7 +130,7 @@ const gallery = [
 		],
 	},
 	{
-		title: 'Projects',
+		title: 'Development',
 		galleries: [
 			{
 				image: 'images/28.jpg',
@@ -195,7 +195,7 @@ const gallery = [
 		],
 	},
 	{
-		title: 'Travel',
+		title: 'Personal projects',
 		galleries: [
 			{
 				image: 'images/40.jpg',

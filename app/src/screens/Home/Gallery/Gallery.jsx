@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import Card from '../../../components/Card/Card'
 import Dropdown from '../../../components/Dropdown/Dropdown'
-import gallery from './GalleryData'
-import styles from './gallery.module.css'
+import gallery from './gallery.data'
+import styles from './gallery.module.scss'
 
 export default function Gallery() {
 	const options = []
@@ -16,6 +16,8 @@ export default function Gallery() {
 		<motion.section className={styles.section}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.head}>
+					<h2>my works:</h2>
+					<div className='line'></div>
 					<div className={styles.nav}>
 						{gallery.map((item, index) => (
 							<button
