@@ -1,8 +1,6 @@
 .header {
 	display: flex;
 	flex-direction: row;
-	right: 0;
-	left: 0;
 	font-size: 22px;
 }
 
@@ -12,6 +10,13 @@
 	justify-content: space-between;
 	height: 80px;
 	width: 100%;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 8px;
+	align-items: center;
 }
 
 .nav {

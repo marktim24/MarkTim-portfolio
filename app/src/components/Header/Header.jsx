@@ -6,14 +6,16 @@ export const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={cn('container', styles.container)}>
-				<div>Mark Tim Portfolio 2023 ©</div>
-				<nav>
-					<ul className={styles.nav}>
-						<li>About Me</li>
-						<li>Projects</li>
-						<li>Contacts</li>
-					</ul>
-				</nav>
+				<div className={styles.wrapper}>
+					<div>Mark Tim Portfolio 2023 ©</div>
+					<nav>
+						<ul className={styles.nav}>
+							<li>About Me</li>
+							<li>Projects</li>
+							<li>Contacts</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 	)

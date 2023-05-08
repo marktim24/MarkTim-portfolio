@@ -1,8 +1,19 @@
 @import 'src/styles/variables';
 
-.hero {
+.section {
 	color: $white-color;
 	margin-bottom: 70px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	align-items: center;
+	grid-gap: 32px;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wrapper {
 }
 
 .description {
