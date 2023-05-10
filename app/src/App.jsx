@@ -1,10 +1,31 @@
+import Page from './components/Page/Page'
+import Preview from './screens/Preview/Preview'
 import Home from '/src/screens/home/Home'
 import '/src/styles/app.scss'
+
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 	return (
 		<>
-			<Home />
+			<Routes>
+				<Route
+					path='/'
+					element={
+						<Page>
+							<Home />
+						</Page>
+					}
+				/>
+				<Route
+					path='/preview'
+					element={
+						<Page>
+							<Preview />
+						</Page>
+					}
+				/>
+			</Routes>
 		</>
 	)
 }
