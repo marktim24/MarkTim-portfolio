@@ -1,37 +1,36 @@
 .container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .content {
-  margin-top: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	margin-top: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .image_container {
-  height: 450px;
-  width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
+	height: 690px;
+	width: 100%;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .image:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
-  .image_container {
-    height: 380px;
-  }
+	.image_container {
+		height: 380px;
+	}
 }
