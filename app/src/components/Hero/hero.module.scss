@@ -7,7 +7,7 @@
 
 .description {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	justify-content: space-between;
 	padding-top: 110px;
 	background-image: url('/hero-bg.jpg');
@@ -27,9 +27,10 @@
 	flex-direction: column;
 	align-items: center;
 	> h1 {
-		width: 100%;
+		max-width: 100%;
 	}
 	> img {
+		max-width: 90%;
 		transform: translateY(170px);
 	}
 
@@ -51,6 +52,12 @@
 	}
 	width: 100%;
 	align-self: flex-start;
+	> h2 {
+		max-width: min-content;
+	}
+	> p {
+		max-width: 85%;
+	}
 
 	@media (max-width: 1440px) {
 		margin-top: 40px;

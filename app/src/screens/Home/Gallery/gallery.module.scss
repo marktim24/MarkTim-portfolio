@@ -7,10 +7,9 @@
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(3, auto);
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 32px;
-	margin-top: 48px;
-	padding-bottom: 48px;
+	margin: 48px 0 48px;
 	position: relative;
 }
 
@@ -34,24 +33,20 @@
 	border-radius: 14px;
 	background: none;
 	font-size: 18px;
-}
-
-.button:hover {
-	color: var(--n2);
+	border: 1.5px solid transparent;
 }
 
 .active {
-	background: var(--n2);
-	color: var(--n8);
 	border: 1.5px solid $black-color;
 	border-radius: 150px;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	&:hover {
+		color: $white-color;
+		background-color: $black-color;
+	}
 }
 
-.active:hover {
-	color: var(--n8);
-}
-
-.dropdown {
+.active .dropdown {
 	display: none;
 }
 
