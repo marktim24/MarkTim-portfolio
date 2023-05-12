@@ -69,3 +69,9 @@
 		grid-template-columns: repeat(1, auto);
 	}
 }
+
+@media (min-width: 768px) {
+	.dropdown {
+		display: none;
+	}
+}

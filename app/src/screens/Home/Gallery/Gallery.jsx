@@ -2,6 +2,7 @@ import cn from 'classnames'
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import Card from '../../../components/Card/Card'
+import Dropdown from '../../../components/Dropdown/Dropdown'
 import gallery from './gallery.data'
 import styles from './gallery.module.scss'
 
@@ -30,6 +31,12 @@ export default function Gallery() {
 							</button>
 						))}
 					</div>
+					<Dropdown
+						className={styles.dropdown}
+						value={direction}
+						options={options}
+						setValue={setDirection}
+					/>
 				</div>
 
 				<div className={styles.wrapper}>
