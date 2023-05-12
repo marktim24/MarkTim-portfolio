@@ -15,7 +15,13 @@
 
 .head {
 	h2 {
-		margin-left: 320px;
+		margin-left: 25%;
+	}
+	@media (max-width: 1200px) {
+		text-align: center;
+		h2 {
+			margin-left: 0;
+		}
 	}
 }
 

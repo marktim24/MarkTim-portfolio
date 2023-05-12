@@ -20,10 +20,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	> h1 {
+	h1 {
 		max-width: 100%;
 	}
-	> img {
+	img {
 		max-width: 90%;
 		transform: translateY(170px);
 	}
@@ -37,10 +37,10 @@
 	}
 	max-width: 100%;
 	align-self: flex-start;
-	> h2 {
+	h2 {
 		max-width: min-content;
 	}
-	> p {
+	p {
 		max-width: 85%;
 	}
 }
@@ -52,22 +52,22 @@
 	*:last-child {
 		margin-left: 40px;
 	}
-	> img {
+	img {
 		max-width: 40%;
 	}
 }
 
 @media (max-width: 1440px) {
 	.title {
-		> h1 {
+		h1 {
 			font-size: 105px;
 		}
-		> img {
+		img {
 			transform: translateY(48px);
 		}
 	}
 	.credits {
-		> h2 {
+		h2 {
 			font-size: 48px;
 		}
 	}
@@ -81,7 +81,7 @@
 		*:not(:first-child) {
 			margin-top: 50px;
 		}
-		> p {
+		p {
 			font-size: 24px;
 		}
 	}
@@ -96,14 +96,14 @@
 		text-align: center;
 	}
 	.title {
-		> h1 {
+		h1 {
 			font-size: 85px;
 			margin-bottom: 20px;
 		}
-		> h2 {
+		h2 {
 			font-size: 37px;
 		}
-		> img {
+		img {
 			width: 105%;
 			max-width: none;
 		}
@@ -117,7 +117,7 @@
 		margin: 60px 0 60px;
 		color: $black-color;
 		text-align: center;
-		> p {
+		p {
 			max-width: 100%;
 		}
 	}
@@ -125,16 +125,16 @@
 
 @media (max-width: 820px) {
 	.title {
-		> h1 {
+		h1 {
 			font-size: 65px;
 			margin-bottom: 20px;
 		}
-		> h2 {
+		h2 {
 			font-size: 28px;
 		}
 	}
 	.credits {
-		> p {
+		p {
 			font-size: 16px;
 		}
 	}

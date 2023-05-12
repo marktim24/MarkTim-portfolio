@@ -8,9 +8,19 @@ export const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={cn('container', styles.container)}>
-				<div>Mark Tim Portfolio 2023 ©</div>
+				<div className={styles.heading}>Mark Tim Portfolio 2023 ©</div>
 				<button onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-					<img src='/favicon.svg' alt='' />
+					<svg
+						width='20'
+						height='18'
+						viewBox='0 0 20 18'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<path d='M20 2H0V0H20V2Z' fill='black' />
+						<path d='M20 10L0 10V8L20 8V10Z' fill='black' />
+						<path d='M0 18L20 18V16L0 16V18Z' fill='black' />
+					</svg>
 				</button>
 				<nav className={mobileNavOpen ? styles.navOpen : styles.nav}>
 					<ul className={styles.navList}>

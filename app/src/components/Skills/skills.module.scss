@@ -20,5 +20,19 @@
 	}
 	> li {
 		list-style-image: url('/bullet-point.svg');
+		line-height: 100%;
+	}
+	@media (max-width: 1090px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		li {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+	}
+	@media (max-width: 820px) {
+		li {
+			font-size: 16px;
+		}
 	}
 }
