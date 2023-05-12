@@ -5,7 +5,7 @@ import HeroMobile from './Adaptation/HeroMobile'
 import styles from './hero.module.scss'
 
 const Hero = () => {
-	const isMobile = useMediaQuery({ query: '(max-width: 991px)' })
+	const isMobile = useMediaQuery({ query: '(max-width: 1090px)' })
 
 	return (
 		<section className={styles.section}>

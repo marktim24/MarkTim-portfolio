@@ -52,6 +52,9 @@
 	*:last-child {
 		margin-left: 40px;
 	}
+	> img {
+		max-width: 40%;
+	}
 }
 
 @media (max-width: 1440px) {
@@ -84,12 +87,13 @@
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1090px) {
 	.description {
-		display: flex;
+		grid-template-columns: 1fr;
 		padding-top: 55px;
 		background-size: 100% 75%;
 		background-position: top center;
+		text-align: center;
 	}
 	.title {
 		> h1 {
@@ -100,11 +104,12 @@
 			font-size: 37px;
 		}
 		> img {
-			max-width: 105%;
+			width: 105%;
+			max-width: none;
 		}
 	}
 	.experience {
-		margin-top: 80px;
+		margin-top: 60px;
 	}
 	.credits {
 		display: flex;
@@ -118,7 +123,21 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
+	.title {
+		> h1 {
+			font-size: 65px;
+			margin-bottom: 20px;
+		}
+		> h2 {
+			font-size: 28px;
+		}
+	}
+	.credits {
+		> p {
+			font-size: 16px;
+		}
+	}
 }
 
 // /* Small phones */
