@@ -17,41 +17,24 @@ export default function Menu({ closeModal, setModal, modal }) {
 					onClick={closeModal}
 				>
 					<svg
-						width='44'
-						height='44'
-						viewBox='0 0 24 24'
+						width='19'
+						height='20'
+						viewBox='0 0 19 20'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
 					>
 						<path
-							d='M8 12H16M12 8L12 16'
-							strokeWidth='1'
-							strokeLinecap='round'
+							fill-rule='evenodd'
+							clip-rule='evenodd'
+							d='M10.5323 0L9.80426 14.9323L17.1717 9.32949L18.1818 11.4071L9.09091 20L0 11.4071L1.01008 9.32949L8.37755 14.9323L7.64954 0H10.5323Z'
+							fill='black'
 						/>
 					</svg>
 				</button>
 				<ul className={styles.menu}>
-					<NavLink
-						className={cn(
-							splitLocation[1] === '/' ? 'button-small active' : 'button-small'
-						)}
-						to='/'
-						onClick={closeModal}
-					>
-						About Me
-					</NavLink>
-
+					<NavLink onClick={closeModal}>About Me</NavLink>
 					<NavLink onClick={closeModal}>Projects</NavLink>
-					<NavLink
-						className={cn(
-							splitLocation[1] === '/homev3'
-								? 'button-small active'
-								: 'button-small'
-						)}
-						onClick={closeModal}
-					>
-						Contacts
-					</NavLink>
+					<NavLink onClick={closeModal}>Contacts</NavLink>
 				</ul>
 			</div>
 		</OutsideClickHandler>

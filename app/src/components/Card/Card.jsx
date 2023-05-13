@@ -1,4 +1,3 @@
-import cn from 'classnames'
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
@@ -47,8 +46,8 @@ const Card = props => {
 			</Link>
 
 			<div className={styles.content}>
-				<h3 className={cn('body-2-bold', styles.title)}>{props.title}</h3>
-				<p className={cn('caption-2')}>{props.date}</p>
+				<h3 className={styles.title}>{props.title}</h3>
+				<p className={styles.skills}>{props.skills}</p>
 			</div>
 		</motion.article>
 	)

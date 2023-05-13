@@ -1,12 +1,12 @@
 import cn from 'classnames'
 import styles from './skills.module.scss'
 
-const Skills = () => {
+const Skills = ({ name }) => {
 	return (
 		<section className={styles.skills}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.skillsName}>
-					<h3>Skills in development:</h3>
+					<h3>Skills in {name}:</h3>
 					<div className='line'></div>
 					<ul className={styles.skillsList}>
 						<li>WordPress</li>

@@ -5,10 +5,10 @@ import Gallery from './Gallery/Gallery'
 const Home = () => {
 	return (
 		<>
-			<Hero></Hero>
-			<Skills></Skills>
-			<Skills></Skills>
-			<Gallery></Gallery>
+			<Hero />
+			<Skills name={'Design'} />
+			<Skills name={'Frontend'} />
+			<Gallery />
 		</>
 	)
 }
