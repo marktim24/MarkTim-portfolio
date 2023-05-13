@@ -20,7 +20,7 @@ const Dropdown = ({ className, value, setValue, options }) => {
 				<div className={styles.head} onClick={() => setVisible(!visible)}>
 					<div className={styles.selection}>{value}</div>
 					<div className={styles.arrow}>
-						<Icon name='arrow-bottom' size={10} />
+						<Icon name='arrow-bottom' size={15} />
 					</div>
 				</div>
 

@@ -7,14 +7,14 @@ const icons = {
 }
 
 const Icon = props => {
-	const size = props.size ? props.size : 16
+	const size = props.size ? props.size : 20
 
 	return (
 		<svg
 			className={cn(props.className)}
 			width={size}
 			height={size}
-			viewBox='0 0 16 16'
+			viewBox='0 0 20 20'
 		>
 			<path d={icons[props.name]}></path>
 		</svg>

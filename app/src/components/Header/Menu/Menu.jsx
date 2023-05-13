@@ -38,30 +38,19 @@ export default function Menu({ closeModal, setModal, modal }) {
 						to='/'
 						onClick={closeModal}
 					>
-						Home V1
+						About Me
 					</NavLink>
 
-					<NavLink
-						className={cn(
-							splitLocation[1] === '/homev2'
-								? 'button-small active'
-								: 'button-small'
-						)}
-						to='/homev2'
-						onClick={closeModal}
-					>
-						Home V2
-					</NavLink>
+					<NavLink onClick={closeModal}>Projects</NavLink>
 					<NavLink
 						className={cn(
 							splitLocation[1] === '/homev3'
 								? 'button-small active'
 								: 'button-small'
 						)}
-						to='/homev3'
 						onClick={closeModal}
 					>
-						Home V3
+						Contacts
 					</NavLink>
 				</ul>
 			</div>

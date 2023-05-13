@@ -1,44 +1,43 @@
+@import 'src/styles/variables';
+
 .close_button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .close_button svg {
-  transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .menu li {
-  list-style: none;
+	list-style: none;
 }
 
 .responsive_menu {
-  position: absolute;
-  border: 1px solid var(--n6);
-  right: 20px;
-  left: 20px;
-  box-shadow: 0px 40px 32px rgba(15, 15, 15, 0.1);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation: fade 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  padding: 40px;
-  background-color: var(--n8);
-  top: 120px;
-  border-radius: 6px;
+	position: absolute;
+	right: 20px;
+	left: 20px;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	animation: _fade_1k1na_1 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	padding: 40px;
+	background-color: $white-color;
+	top: 78px;
 }
 
 .menu {
-  display: grid;
-  text-align: center;
-  grid-gap: 32px;
+	display: grid;
+	text-align: center;
+	grid-gap: 32px;
 }
 
 @keyframes fade {
-  0% {
-    transform: translateY(100px);
-  }
+	0% {
+		transform: translateY(100px);
+	}
 
-  100% {
-    transform: translateY(0);
-  }
+	100% {
+		transform: translateY(0);
+	}
 }
