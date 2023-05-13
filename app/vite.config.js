@@ -3,6 +3,9 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/MarkTim-portfolio/',
+	base: process.env.NODE_ENV === 'production' ? '/MarkTim-portfolio/' : '/',
+	build: {
+		outDir: 'dist',
+	},
 	plugins: [react()],
 })
