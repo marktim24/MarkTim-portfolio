@@ -17,8 +17,8 @@ const HeroMobile = () => {
 				</div>
 			</div>
 			<div className={styles.experience}>
-				<img src='/total-experience.png' alt='' />
-				<img src='/projects-count.png' alt='' />
+				<img src='/total-experience.webp' alt='' />
+				<img src='/projects-count.webp' alt='' />
 			</div>
 			<div className={styles.credits}>
 				<p>

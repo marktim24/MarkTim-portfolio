@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 @font-face {
 	font-family: 'Monument Extended';
-	src: url('/src/assets/fonts/MonumentExtended-Regular.otf') format('otf');
-	src: url('/src/assets/fonts/MonumentExtended-Regular.woff') format('woff');
+	src: url('/fonts/MonumentExtended-Regular.otf') format('opentype'),
+		url('/fonts/MonumentExtended-Regular.woff') format('woff');
 	font-display: swap;
 	font-weight: normal;
 	font-style: normal;

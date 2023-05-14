@@ -24,8 +24,8 @@ const HeroDesktop = () => {
 				</div>
 			</motion.div>
 			<motion.div className={styles.experience}>
-				<img src='/total-experience.png' alt='' />
-				<img src='/projects-count.png' alt='' />
+				<img src='/total-experience.webp' alt='' />
+				<img src='/projects-count.webp' alt='' />
 			</motion.div>
 		</>
 	)
