@@ -21,13 +21,17 @@
 	flex-direction: row;
 	justify-content: space-between;
 	line-height: 100%;
-	> a {
+	transition: all 0.1s cubic-bezier(0, 0.57, 0.4, 0.09);
+	a {
 		font-size: 26px;
 		color: $black-color;
 		text-decoration-line: underline;
 		&::before {
 			content: url('/link-icon.svg');
 			margin-right: 8px;
+		}
+		&:hover {
+			text-decoration: none;
 		}
 	}
 	@media (max-width: 1090px) {

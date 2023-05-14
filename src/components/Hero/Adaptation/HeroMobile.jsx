@@ -8,7 +8,12 @@ const HeroMobile = () => {
 					<h1>Mark Tim</h1>
 					<h2>frontend developer</h2>
 					<h2>Designer</h2>
-					<img src='/profile-pic.png' className={styles.profileImage} alt='' />
+					<img
+						to='/'
+						src='/profile-pic.png'
+						className={styles.profileImage}
+						alt=''
+					/>
 				</div>
 			</div>
 			<div className={styles.experience}>

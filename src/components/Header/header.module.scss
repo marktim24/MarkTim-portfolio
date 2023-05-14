@@ -27,6 +27,27 @@
 	grid-template-columns: repeat(3, auto);
 	grid-gap: 60px;
 	align-items: center;
+	a {
+		display: inline-block;
+		&:hover {
+			transition: all 0.1s cubic-bezier(0, 0.57, 0.4, 0.09);
+			transform: translateY(-4px);
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 0;
+			height: 1.5px;
+			margin-top: 10px;
+			background-color: black;
+			transition: all 0.15s cubic-bezier(0, 0.57, 0.4, 0.09);
+		}
+		&:hover::after {
+			width: 100%;
+		}
+	}
 }
 
 .wrapper {

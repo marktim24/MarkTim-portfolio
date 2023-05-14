@@ -1,12 +1,17 @@
+import { motion } from 'framer-motion'
 import styles from '../hero.module.scss'
 
 const HeroDesktop = () => {
 	return (
 		<>
-			<div className={styles.description}>
+			<motion.div className={styles.description}>
 				<div className={styles.title}>
 					<h1>Mark Tim</h1>
-					<img src='/profile-pic.png' className={styles.profileImage} alt='' />
+					<motion.img
+						src='/profile-pic.png'
+						className={styles.profileImage}
+						alt=''
+					/>
 				</div>
 				<div className={styles.credits}>
 					<h2>frontend developer</h2>
@@ -17,11 +22,11 @@ const HeroDesktop = () => {
 						HTML, CSS, and JavaScript.
 					</p>
 				</div>
-			</div>
-			<div className={styles.experience}>
+			</motion.div>
+			<motion.div className={styles.experience}>
 				<img src='/total-experience.png' alt='' />
 				<img src='/projects-count.png' alt='' />
-			</div>
+			</motion.div>
 		</>
 	)
 }

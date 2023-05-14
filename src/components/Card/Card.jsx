@@ -9,18 +9,6 @@ const variants = {
 	hidden: { opacity: 0 },
 }
 
-const photos = [
-	{
-		name: `Param`,
-	},
-	{
-		name: `Vennila`,
-	},
-	{
-		name: `Afrin`,
-	},
-]
-
 const Card = props => {
 	const controls = useAnimation()
 	const [ref, inView] = useInView()

@@ -1,4 +1,5 @@
 import cn from 'classnames'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Menu from './Menu/Menu'
@@ -27,6 +28,7 @@ export const Header = () => {
 		<header className={styles.header}>
 			<div className={cn('container', styles.container)}>
 				<NavLink className={styles.heading} to='/'>
+					{' '}
 					Mark Tim Portfolio 2023 ©
 				</NavLink>
 				<div>
@@ -59,9 +61,27 @@ export const Header = () => {
 					) : null}
 				</div>
 				<div className={styles.mini_wrapper}>
-					<NavLink>About Me</NavLink>
-					<NavLink>Projects</NavLink>
-					<NavLink>Contacts</NavLink>
+					<motion.div
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+					>
+						<NavLink>About Me</NavLink>
+					</motion.div>
+					<motion.div
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+					>
+						<NavLink>Projects</NavLink>
+					</motion.div>
+					<motion.div
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+					>
+						<NavLink>Contacts</NavLink>
+					</motion.div>
 				</div>
 			</div>
 		</header>

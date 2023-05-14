@@ -20,6 +20,9 @@
 }
 
 .head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	position: relative;
 	height: 48px;
 	padding: 0 48px 0 16px;
@@ -52,13 +55,13 @@
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
-	box-shadow: inset 0 0 0 2px var(--n6);
 	transform: translateY(-50%);
 }
 
 .arrow svg {
-	fill: var(--n4);
-	transition: transform 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .body {
@@ -68,7 +71,6 @@
 	right: 0;
 	padding: 8px 0;
 	background: $white-color;
-	box-shadow: inset 0 0 0 2px var(--n6), 0 4px 12px rgba(var(--n2), 0.1);
 	visibility: hidden;
 	opacity: 0;
 	transform: translateY(3px);

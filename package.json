@@ -9,13 +9,14 @@
 		"build": "vite build",
 		"lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
-		"deploy": "gh-pages -d dist" 
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"classnames": "^2.3.2",
 		"gh-pages": "^5.0.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-spring": "^9.7.1"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.28",

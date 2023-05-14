@@ -11,6 +11,10 @@ export default function Gallery() {
 	gallery.map(item => options.push(item.title))
 
 	const [direction, setDirection] = useState(options[0])
+	const variants = {
+		visible: { opacity: 1 },
+		hidden: { opacity: 0 },
+	}
 
 	return (
 		<motion.section className={styles.section}>
@@ -20,15 +24,18 @@ export default function Gallery() {
 					<div className='line'></div>
 					<div className={styles.nav}>
 						{gallery.map((item, index) => (
-							<button
+							<motion.button
 								className={cn(styles.button, {
 									[styles.active]: item.title === direction,
 								})}
 								onClick={() => setDirection(item.title)}
 								key={index}
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
+								transition={{ type: 'spring', stiffness: 300, damping: 15 }}
 							>
 								{item.title}
-							</button>
+							</motion.button>
 						))}
 					</div>
 					<Dropdown
