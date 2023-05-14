@@ -8,7 +8,7 @@ const HeroDesktop = () => {
 				<div className={styles.title}>
 					<h1>Mark Tim</h1>
 					<motion.img
-						src='/profile-pic.png'
+						src='/profile-pic.webp'
 						className={styles.profileImage}
 						alt=''
 					/>

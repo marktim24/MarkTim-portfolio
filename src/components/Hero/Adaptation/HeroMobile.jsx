@@ -10,7 +10,7 @@ const HeroMobile = () => {
 					<h2>Designer</h2>
 					<img
 						to='/'
-						src='/profile-pic.png'
+						src='/profile-pic.webp'
 						className={styles.profileImage}
 						alt=''
 					/>
