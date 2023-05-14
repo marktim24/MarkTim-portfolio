@@ -8,11 +8,12 @@
 }
 
 .close_button svg {
-	transform: rotate(45deg);
+	transform: translateX(-10px);
 }
 
 .menu li {
 	list-style: none;
+	color: $black-color; /* Add this line */
 }
 
 .responsive_menu {
