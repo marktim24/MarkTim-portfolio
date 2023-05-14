@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/MarkTim-portfolio/tree/gh-pages/',
+	base: '/MarkTim-portfolio/',
 	build: {
 		outDir: 'dist',
 	},
