@@ -3,64 +3,12 @@ const gallery = [
 		title: 'Graphic design',
 		galleries: [
 			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'By the sea',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Black sand',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Plants',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Sea',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Spian',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Interior',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Triangle',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Paint',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Autumn',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Squares',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Mountains',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Dark Sea',
-				skills: '#React #Vue',
+				image: '/portfolio-db/Logo_Preview.jpg',
+				title: 'Logo Book',
+				skills: ['#React', '#Vue'],
+				cardImage: '/portfolio-db/logobook.jpg',
+				description:
+					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 			},
 		],
 	},
@@ -82,51 +30,6 @@ const gallery = [
 				title: 'Plants',
 				skills: '#React #Vue',
 			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Sea',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Spian',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Interior',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Triangle',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Paint',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Autumn',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Squares',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Mountains',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Dark Sea',
-				skills: '#React #Vue',
-			},
 		],
 	},
 	{
@@ -142,56 +45,6 @@ const gallery = [
 				title: 'Black sand',
 				skills: '#React #Vue',
 			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Plants',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Sea',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Spian',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Interior',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Triangle',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Paint',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Autumn',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Squares',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Mountains',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Dark Sea',
-				skills: '#React #Vue',
-			},
 		],
 	},
 	{
@@ -200,61 +53,6 @@ const gallery = [
 			{
 				image: '/portfolio-db/Item-1.jpg',
 				title: 'By the sea',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Black sand',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Plants',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Sea',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Spian',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Interior',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Triangle',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Paint',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Autumn',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Squares',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Mountains',
-				skills: '#React #Vue',
-			},
-			{
-				image: '/portfolio-db/Item-1.jpg',
-				title: 'Dark Sea',
 				skills: '#React #Vue',
 			},
 		],

@@ -18,7 +18,7 @@ function App() {
 					}
 				/>
 				<Route
-					path='/preview'
+					path='/preview/:category/:title'
 					element={
 						<Page>
 							<Preview />

@@ -1,7 +1,7 @@
 import cn from 'classnames'
 import styles from './skills.module.scss'
 
-const Skills = ({ name }) => {
+const Skills = ({ name, database }) => {
 	return (
 		<section className={styles.skills}>
 			<div className={cn('container', styles.container)}>
@@ -9,14 +9,7 @@ const Skills = ({ name }) => {
 					<h3>Skills in {name}:</h3>
 					<div className='line'></div>
 					<ul className={styles.skillsList}>
-						<li>WordPress</li>
-						<li>Figma/ Adobe XD</li>
-						<li>Prototyping</li>
-						<li>After Effect</li>
-						<li>UI Kit</li>
-						<li>Typography</li>
-						<li>Agile</li>
-						<li>Premiere Pro</li>
+						{database && database.map((item, index) => <li>{item.skill}</li>)}
 					</ul>
 				</div>
 			</div>

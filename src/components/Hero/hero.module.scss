@@ -3,6 +3,10 @@
 .section {
 	color: $white-color;
 	margin-bottom: 70px;
+	img {
+		user-select: none;
+		pointer-events: none;
+	}
 }
 
 .description {
@@ -22,6 +26,7 @@
 	align-items: center;
 	h1 {
 		max-width: 100%;
+		text-align: center;
 	}
 	img {
 		max-width: 90%;

@@ -10,11 +10,7 @@ export default function Gallery() {
 	const options = []
 	gallery.map(item => options.push(item.title))
 
-	const [direction, setDirection] = useState(options[0])
-	const variants = {
-		visible: { opacity: 1 },
-		hidden: { opacity: 0 },
-	}
+	const [direction, setDirection] = useState(gallery[0].title)
 
 	return (
 		<motion.section className={styles.section}>
@@ -49,9 +45,9 @@ export default function Gallery() {
 				<div className={styles.wrapper}>
 					{gallery
 						.find(item => item.title === direction)
-						.galleries.map((item, index) => (
-							<Card {...item} />
-						))}
+						?.galleries.map((item, index) => {
+							return <Card key={index} category={direction} {...item} />
+						})}
 				</div>
 			</div>
 		</motion.section>
