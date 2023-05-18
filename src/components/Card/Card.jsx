@@ -14,7 +14,11 @@ const Card = props => {
 
 			<div className={styles.content}>
 				<h3 className={styles.title}>{props.title}</h3>
-				<p className={styles.skills}>{props.skills}</p>
+				<p className={styles.skills}>
+					{props.skills.map((skill, index) => (
+						<p key={index}>{skill}</p>
+					))}
+				</p>
 			</div>
 		</motion.article>
 	)

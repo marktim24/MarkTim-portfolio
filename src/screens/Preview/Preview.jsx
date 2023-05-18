@@ -1,6 +1,6 @@
 import { useLocation, useParams } from 'react-router-dom'
 import gallery from '../Home/Gallery/gallery.data'
-import HeroPreview from './HeroPreview/HeroPreview'
+import ProjectPreview from './HeroPreview/ProjectPreview'
 
 const Preview = () => {
 	const { category, title } = useParams()
@@ -13,7 +13,7 @@ const Preview = () => {
 
 	return (
 		<>
-			<HeroPreview relatedCards={relatedCards} currentTitle={title} />
+			<ProjectPreview relatedCards={relatedCards} currentTitle={title} />
 		</>
 	)
 }

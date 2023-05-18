@@ -12,10 +12,14 @@
 }
 
 .skills {
-	font-size: 24px;
+	display: inline-flex;
 	line-height: 100%;
 	opacity: 0.5;
 	text-align: right;
+	p {
+		margin-left: 5px;
+		font-size: 24px;
+	}
 }
 
 .image_container {

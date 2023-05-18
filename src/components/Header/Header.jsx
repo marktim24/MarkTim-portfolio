@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import Menu from './Menu/Menu'
 import styles from './header.module.scss'
 
-export const Header = () => {
+export const Header = (title, leftInfo) => {
 	const [modal, setModal] = useState(false)
 	const [dropdown, setDropdown] = useState(false)
 
