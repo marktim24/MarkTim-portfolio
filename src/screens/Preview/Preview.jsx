@@ -1,6 +1,8 @@
 import { useLocation, useParams } from 'react-router-dom'
+import Footer from '../../components/Footer/Footer'
+import Header from '../../components/Header/Header'
 import gallery from '../Home/Gallery/gallery.data'
-import ProjectPreview from './HeroPreview/ProjectPreview'
+import ProjectPreview from './ProjectPreview/ProjectPreview'
 
 const Preview = () => {
 	const { category, title } = useParams()
@@ -13,7 +15,9 @@ const Preview = () => {
 
 	return (
 		<>
+			<Header title={category} navigation={false} />
 			<ProjectPreview relatedCards={relatedCards} currentTitle={title} />
+			<Footer navigation={false} />
 		</>
 	)
 }

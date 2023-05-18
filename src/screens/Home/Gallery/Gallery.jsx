@@ -1,6 +1,7 @@
 import cn from 'classnames'
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
+import { motionProps } from '../../../assets/animation-settings/motionProps'
 import Card from '../../../components/Card/Card'
 import Dropdown from '../../../components/Dropdown/Dropdown'
 import gallery from './gallery.data'
@@ -26,9 +27,7 @@ export default function Gallery() {
 								})}
 								onClick={() => setDirection(item.title)}
 								key={index}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+								{...motionProps}
 							>
 								{item.title}
 							</motion.button>
