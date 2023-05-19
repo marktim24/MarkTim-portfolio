@@ -8,17 +8,13 @@ const Card = props => {
 		<motion.article initial='hidden' className={styles.container}>
 			<Link to={`/preview/${category}/${title}`}>
 				<div className={styles.image_container}>
-					<img className={styles.image} src={props.image} />
+					<img className={styles.image} src={props.previewImage} />
 				</div>
 			</Link>
 
 			<div className={styles.content}>
 				<h3 className={styles.title}>{props.title}</h3>
-				<p className={styles.skills}>
-					{props.skills.map((skill, index) => (
-						<p key={index}>{skill}</p>
-					))}
-				</p>
+				<p className={styles.skills}>{props.hashTag}</p>
 			</div>
 		</motion.article>
 	)

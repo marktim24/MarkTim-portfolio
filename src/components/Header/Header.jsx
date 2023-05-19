@@ -1,7 +1,7 @@
 import cn from 'classnames'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { motionProps } from '../../assets/animation-settings/motionProps.js'
 import Menu from './Menu/Menu'
 import styles from './header.module.scss'
@@ -17,7 +17,16 @@ export const Header = ({ title, navigation }) => {
 		<header className={styles.header}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.content}>
-					<NavLink className={styles.heading} to='/'>
+					<NavLink
+						style={
+							navigation
+								? {}
+								: { fontWeight: '600', textTransform: 'uppercase' }
+						}
+						className={styles.heading}
+						{...motionProps}
+						to='/'
+					>
 						{title}
 					</NavLink>
 					{navigation && (
@@ -72,13 +81,19 @@ export const Header = ({ title, navigation }) => {
 								<NavLink>Projects</NavLink>
 							</motion.div>
 							<motion.div {...motionProps}>
-								<NavLink>Contacts</NavLink>
+								<NavLink>Contact Me</NavLink>
 							</motion.div>
 						</div>
 					) : (
-						<div className={styles.mini_wrapper_title}>
-							Mark Tim Portfolio 2023 ©
-						</div>
+						<motion.div className={styles.mini_wrapper_title} {...motionProps}>
+							<Link to='/'>
+								<img
+									className={styles.logo}
+									src='/logo.svg'
+									alt='Personal Logo'
+								/>
+							</Link>
+						</motion.div>
 					)}
 				</div>
 			</div>

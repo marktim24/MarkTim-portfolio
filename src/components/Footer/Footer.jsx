@@ -8,7 +8,7 @@ const Footer = ({ navigation }) => {
 		<footer className={styles.footer}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.contacts}>
-					<h3>Contacts:</h3>
+					<h3>Links:</h3>
 					<motion.a
 						{...motionProps}
 						href='https://www.behance.net/marktim24'
