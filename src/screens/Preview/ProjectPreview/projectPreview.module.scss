@@ -110,9 +110,10 @@
 	}
 	.tools {
 		justify-content: unset;
+		align-items: end;
 	}
 	.links {
-		justify-content: unset;
+		justify-content: space-around;
 	}
 	.linkButton {
 		p {

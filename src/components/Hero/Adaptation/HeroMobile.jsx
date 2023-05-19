@@ -4,6 +4,10 @@ const HeroMobile = () => {
 	return (
 		<>
 			<div className={styles.description}>
+				<video className={styles.video} autoPlay muted loop>
+					<source src='/hero-video.webm' type='video/webm' />
+					<img src='/hero-bg.webp' alt='Hero Background' />
+				</video>
 				<div className={styles.title}>
 					<h1>Mark Tim</h1>
 					<h2>frontend developer</h2>
