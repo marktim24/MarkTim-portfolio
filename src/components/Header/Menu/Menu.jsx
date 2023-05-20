@@ -1,30 +1,52 @@
+import { AnimatePresence, motion } from 'framer-motion' // Import motion and AnimatePresence
 import OutsideClickHandler from 'react-outside-click-handler'
-import { NavLink, useLocation } from 'react-router-dom'
 import styles from './menu.module.scss'
 
-const itemVariants = {
-	open: {
-		opacity: 1,
-		y: 0,
-		transition: { type: 'spring', stiffness: 300, damping: 24 },
-	},
-	closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
-}
+export default function Menu({ closeModal, setModal }) {
+	const menuVariants = {
+		open: {
+			opacity: 1,
+			height: 'auto',
+			transition: {
+				opacity: { duration: 0.2 },
+				height: { duration: 0.4 },
+			},
+		},
+		closed: {
+			opacity: 0,
+			height: 0,
+			transition: {
+				opacity: { duration: 0.2 },
+				height: { duration: 0.2 },
+			},
+		},
+	}
 
-export default function Menu({ closeModal, setModal, modal }) {
-	const location = useLocation()
-	const { pathname } = location
-
-	const splitLocation = pathname.split('/')
+	const itemVariants = {
+		open: {
+			opacity: 1,
+			y: 0,
+			transition: { type: 'spring', stiffness: 300, damping: 24 },
+		},
+		closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+	}
 
 	return (
 		<OutsideClickHandler onOutsideClick={() => setModal(false)}>
-			<div modal={modal} className={styles.responsive_menu}>
-				<ul className={styles.menu}>
-					<NavLink onClick={closeModal}>About Me</NavLink>
-					<NavLink onClick={closeModal}>Projects</NavLink>
-					<NavLink onClick={closeModal}>Contacts</NavLink>
-				</ul>
+			<div className={styles.responsive_menu}>
+				<AnimatePresence>
+					<motion.ul
+						className={styles.menu}
+						variants={menuVariants}
+						initial='closed'
+						animate='open'
+						exit='closed'
+					>
+						<motion.NavLink variants={itemVariants}>About Me</motion.NavLink>
+						<motion.NavLink variants={itemVariants}>Projects</motion.NavLink>
+						<motion.NavLink variants={itemVariants}>Contacts</motion.NavLink>
+					</motion.ul>
+				</AnimatePresence>
 			</div>
 		</OutsideClickHandler>
 	)

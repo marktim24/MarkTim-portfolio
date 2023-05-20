@@ -1,7 +1,7 @@
 import cn from 'classnames'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { motionProps } from '../../assets/animation-settings/motionProps.js'
 import Menu from './Menu/Menu'
 import styles from './header.module.scss'
@@ -9,8 +9,25 @@ import styles from './header.module.scss'
 export const Header = ({ title, navigation }) => {
 	const [modal, setModal] = useState(false)
 	const [dropdown, setDropdown] = useState(false)
+	const navigate = useNavigate()
+
 	const toggleDropdown = () => {
 		setDropdown(!dropdown)
+	}
+
+	const openModal = () => {
+		setModal(true)
+		setDropdown(false)
+	}
+
+	const closeModal = () => {
+		setModal(false)
+		setDropdown(false)
+	}
+
+	const handleContactClick = () => {
+		closeModal()
+		navigate('/contact')
 	}
 
 	return (
@@ -62,26 +79,32 @@ export const Header = ({ title, navigation }) => {
 									</svg>
 								)}
 							</button>
-							{dropdown ? (
-								<section className={cn('background')}>
-									<div className={cn('align')}>
-										<Menu openModal={setModal} closeDropdown={setDropdown} />
-									</div>
-								</section>
-							) : null}
+							{dropdown && (
+								<Menu
+									closeModal={closeModal}
+									setModal={openModal}
+									modal={modal}
+								/>
+							)}
 						</div>
 					)}
 
 					{navigation ? (
 						<div className={styles.mini_wrapper}>
 							<motion.div {...motionProps}>
-								<NavLink>About Me</NavLink>
+								<NavLink to='/about' onClick={closeModal}>
+									About Me
+								</NavLink>
 							</motion.div>
 							<motion.div {...motionProps}>
-								<NavLink>Projects</NavLink>
+								<NavLink to='/projects' onClick={closeModal}>
+									Projects
+								</NavLink>
 							</motion.div>
 							<motion.div {...motionProps}>
-								<NavLink>Contact Me</NavLink>
+								<NavLink to='/projects' onClick={closeModal}>
+									Contact Me
+								</NavLink>
 							</motion.div>
 						</div>
 					) : (

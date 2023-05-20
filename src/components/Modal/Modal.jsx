@@ -1,8 +1,9 @@
 import cn from 'classnames'
 import OutsideClickHandler from 'react-outside-click-handler'
-import styles from './modal.module.scss'
+import ContactForm from '../ContactForm/ContactForm'
+import styles from './modal.module.css'
 
-export default function Modal({ closeModal, setModal, modal }) {
+const Modal = (closeModal, setModal, modal) => {
 	return (
 		<OutsideClickHandler onOutsideClick={() => setModal(false)}>
 			<div modal={modal} className={styles.content}>
@@ -23,8 +24,11 @@ export default function Modal({ closeModal, setModal, modal }) {
 
 				<div>
 					<h1 className={cn('h2', styles.h1)}>{'Get in touch'}</h1>
+					<ContactForm />
 				</div>
 			</div>
 		</OutsideClickHandler>
 	)
 }
+
+export default Modal

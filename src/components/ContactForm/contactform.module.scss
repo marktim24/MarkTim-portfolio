@@ -1,0 +1,84 @@
+.form {
+  margin-top: 32px;
+  display: grid;
+  grid-gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input_wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 8px;
+}
+
+.input {
+  width: 100%;
+  color: var(--n2);
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  padding: 18px;
+  border: 2px solid var(--n6);
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: var(--n8);
+}
+
+.textarea {
+  width: 100%;
+  color: var(--n2);
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  padding: 18px;
+  border: 2px solid var(--n6);
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: var(--n8);
+}
+
+.input::placeholder {
+  color: var(--n4);
+}
+
+.input:hover {
+  border: 2px solid var(--n2);
+}
+
+.input:active {
+  border: 2px solid var(--n2);
+}
+
+.input:focus {
+  color: var(--p1);
+  border: 2px solid var(--p1);
+}
+
+.textarea::placeholder {
+  color: var(--n4);
+}
+
+.textarea:hover {
+  border: 2px solid var(--n2);
+}
+
+.textarea:active {
+  border: 2px solid var(--n2);
+}
+
+.textarea:focus {
+  color: var(--p1);
+  border: 2px solid var(--p1);
+}
+
+@media (max-width: 768px) {
+  .input_wrapper {
+    grid-template-columns: auto;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

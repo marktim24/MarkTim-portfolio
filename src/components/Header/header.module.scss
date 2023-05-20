@@ -90,7 +90,7 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		z-index: 9999;
+		z-index: 1;
 	}
 
 	.main_wrapper {
@@ -108,11 +108,6 @@
 		padding: 6px;
 		border-radius: 9999px;
 		grid-gap: 8px;
-	}
-
-	.menu_item {
-		padding: 8px;
-		border-radius: 9999px;
 	}
 
 	.responsive_button {
