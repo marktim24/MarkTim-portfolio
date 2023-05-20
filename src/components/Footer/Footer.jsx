@@ -55,6 +55,7 @@ const Footer = ({ navigation }) => {
 						</nav>
 					</div>
 				)}
+				{/* //TODO: See you Soon block */}
 			</div>
 		</footer>
 	)

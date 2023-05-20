@@ -65,7 +65,7 @@
 .downloadBtn {
 	display: flex;
 	align-items: center;
-	color: $black-color;
+	color: $white-color;
 	font-size: 21px;
 	line-height: 150%;
 	margin-top: unset;
@@ -164,6 +164,7 @@
 		}
 	}
 	.downloadBtn {
+		color: $black-color;
 		border: 1px solid $black-color;
 		padding: 15px 45px;
 		&:hover {

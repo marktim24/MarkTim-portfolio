@@ -89,6 +89,7 @@
 }
 
 .backButton {
+	margin-top: 40px;
 	h3 {
 		&::after {
 			margin-left: 15px;
@@ -140,6 +141,7 @@
 		}
 	}
 	.tools {
+		align-items: unset;
 		ul {
 			flex-direction: row;
 		}

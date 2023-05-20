@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
 import Header from '../../components/Header/Header'
@@ -7,7 +8,16 @@ import ProjectPreview from './ProjectPreview/ProjectPreview'
 const Preview = () => {
 	const { category, title } = useParams()
 	const location = useLocation()
-	const currentTitle = location.state?.currentTitle || 'Default Title'
+
+	useEffect(() => {
+		sessionStorage.setItem('currentTitle', title)
+	}, [title])
+
+	useEffect(() => {
+		sessionStorage.removeItem('currentTitle')
+	}, [location])
+
+	const currentTitle = sessionStorage.getItem(title) || 'Default Title'
 
 	const relatedCards = (
 		gallery.find(item => item.title === category)?.galleries || []
@@ -16,7 +26,7 @@ const Preview = () => {
 	return (
 		<>
 			<Header title={category} navigation={false} />
-			<ProjectPreview relatedCards={relatedCards} currentTitle={title} />
+			<ProjectPreview relatedCards={relatedCards} currentTitle={currentTitle} />
 			<Footer navigation={false} />
 		</>
 	)

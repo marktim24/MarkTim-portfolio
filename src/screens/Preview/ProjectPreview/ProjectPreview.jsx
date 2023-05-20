@@ -1,11 +1,15 @@
 import cn from 'classnames'
 import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { motionProps } from '../../../assets/animation-settings/motionProps'
 import styles from './projectPreview.module.scss'
 
-const ProjectPreview = ({ relatedCards, currentTitle }) => {
+const ProjectPreview = ({ relatedCards }) => {
+	const { title } = useParams()
+	const location = useLocation()
+
+	const currentTitle = location.state?.currentTitle || title
 	const selectedCard = relatedCards.find(card => card.title === currentTitle)
 	const isSmallScreen = useMediaQuery({ query: '(max-width: 1250px)' })
 
@@ -74,4 +78,5 @@ const ProjectPreview = ({ relatedCards, currentTitle }) => {
 		</section>
 	)
 }
+
 export default ProjectPreview

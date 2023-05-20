@@ -4,50 +4,50 @@ const gallery = [
 		galleries: [
 			{
 				title: 'Logofolio',
-				hashTag: '#Graphic',
-				instruments: ['Illustrator', 'Photoshop'],
-				previewImage: '/portfolio-db/preview/Logo_Preview.jpg',
-				cardImage: '/portfolio-db/projects/LogoBook.png',
+				hashTag: '#Logo Design',
+				instruments: ['Illustrator', 'Photoshop', 'Figma'],
+				previewImage: '/portfolio-db/preview/Logofolio_Preview.webp',
+				cardImage: '/portfolio-db/projects/Logofolio.webp',
 				description:
 					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: 'https://www.behance.net/gallery/168959915/Logofolio',
 			},
 			{
-				title: 'Pasta Brand',
-				hashTag: '#Identity',
+				title: 'Delicieuses Pates',
+				hashTag: '#Pasta brand',
 				instruments: ['Illustrator', 'Photoshop'],
-				previewImage: '/portfolio-db/preview/Pasta_Preview.jpg',
-				cardImage: '/portfolio-db/projects/PastaBrand.png',
+				previewImage: '/portfolio-db/preview/PastaBrand_Preview.webp',
+				cardImage: '/portfolio-db/projects/PastaBrand.webp',
 				description:
 					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: 'https://www.behance.net/gallery/168959915/Logofolio',
 			},
 			{
 				title: 'Illuminartist',
-				hashTag: '#Identity',
+				hashTag: '#Artist event',
 				instruments: ['Illustrator', 'Photoshop'],
-				previewImage: '/portfolio-db/preview/Illuminartist_Preview.jpg',
-				cardImage: '/portfolio-db/projects/IlluminartistBrand.png',
+				previewImage: '/portfolio-db/preview/Illuminartist_Preview.webp',
+				cardImage: '/portfolio-db/projects/Illuminartist.webp',
 				description:
 					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: 'https://www.behance.net/gallery/168959915/Logofolio',
 			},
 			{
-				title: 'Nero Craft',
-				hashTag: '#Identity',
+				title: 'Nero',
+				hashTag: '#Craft academy',
 				instruments: ['Illustrator', 'Photoshop'],
-				previewImage: '/portfolio-db/preview/NeroCraft_Preview.jpg',
-				cardImage: '/portfolio-db/projects/NeroCraft.png',
+				previewImage: '/portfolio-db/preview/NeroCraft_Preview.webp',
+				cardImage: '/portfolio-db/projects/NeroCraft.webp',
 				description:
 					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: 'https://www.behance.net/gallery/168959915/Logofolio',
 			},
-			{
-				title: 'Computer Graphic',
-				hashTag: '#Identity',
-				instruments: ['Illustrator', 'Photoshop'],
-				previewImage: '/portfolio-db/preview/ComputerGraphics_Preview.jpg',
-				cardImage: '/portfolio-db/projects/ComputerGraphics.png',
+		{
+				title: 'Precise Digital',
+				hashTag: '#Social media ',
+				instruments: ['Illustrator', 'Photoshop', 'Cinema 4D'],
+				previewImage: '/portfolio-db/preview/PreciseMedia_Preview.webp',
+				cardImage: '/portfolio-db/projects/PreciseMedia.webp',
 				description:
 					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: 'https://www.behance.net/gallery/168959915/Logofolio',
@@ -56,8 +56,8 @@ const gallery = [
 				title: 'Print Design',
 				hashTag: '#Identity',
 				instruments: ['Illustrator', 'Photoshop'],
-				previewImage: '/portfolio-db/preview/PrintDesign_Preview.jpg',
-				cardImage: '/portfolio-db/projects/PrintDesign.png',
+				previewImage: '/portfolio-db/preview/PrintDesign_Preview.webp',
+				cardImage: '/portfolio-db/projects/PrintDesign.webp',
 				description:
 					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: 'https://www.behance.net/gallery/168959915/Logofolio',
@@ -68,7 +68,7 @@ const gallery = [
 		title: 'Web design',
 		galleries: [
 			{
-				previewImage: '/portfolio-db/preview/PreciseSite_Preview.jpg',
+				previewImage: '/portfolio-db/preview/PreciseSite_Preview.webp',
 				title: 'Precise Site',
 				instruments: ['Illustrator', 'Photoshop'],
 				cardImage: '/portfolio-db/projects/PreciseSite.png',
