@@ -38,7 +38,7 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 					CSS, and JavaScript.
 				</p>
 				<motion.button
-					cclassName={styles.downloadBtn}
+					className={styles.downloadBtn}
 					onClick={openModal}
 					{...motionProps}
 				>
