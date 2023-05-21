@@ -18,7 +18,7 @@ const Hero = () => {
 	}
 
 	return (
-		<section className={styles.section}>
+		<section id='hero' className={styles.section}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.wrapper}>
 					{isMobile ? (

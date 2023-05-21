@@ -3,7 +3,7 @@ import styles from './skills.module.scss'
 
 const Skills = ({ name, database }) => {
 	return (
-		<section className={styles.skills}>
+		<section id='skills' className={styles.skills}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.skillsName}>
 					<h3>Skills in {name}:</h3>

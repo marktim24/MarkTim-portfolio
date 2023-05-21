@@ -78,7 +78,7 @@ export const Header = ({ title, navigation }) => {
 							<motion.div {...motionProps}>
 								<NavLink
 									onClick={() => {
-										handleScrollToSection('projects')
+										handleScrollToSection('skills')
 									}}
 								>
 									About Me
