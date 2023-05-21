@@ -14,7 +14,7 @@ export default function Gallery() {
 	const [direction, setDirection] = useState(gallery[0].title)
 
 	return (
-		<motion.section className={styles.section}>
+		<motion.section id='projects' className={styles.section}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.head}>
 					<h2>my works:</h2>

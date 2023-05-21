@@ -1,8 +1,9 @@
-import { AnimatePresence, motion } from 'framer-motion' // Import motion and AnimatePresence
+import { AnimatePresence, motion } from 'framer-motion'
 import OutsideClickHandler from 'react-outside-click-handler'
+import { handleScrollToSection } from '../../../assets/scrollUtils/scrollUtils'
 import styles from './menu.module.scss'
 
-export default function Menu({ closeModal, setModal }) {
+export default function Menu({ closeModal, setModal, onMenuItemClick }) {
 	const menuVariants = {
 		open: {
 			opacity: 1,
@@ -31,6 +32,11 @@ export default function Menu({ closeModal, setModal }) {
 		closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 	}
 
+	const handleMenuItemClick = () => {
+		onMenuItemClick() // Call the onMenuItemClick prop to close the dropdown
+		closeModal()
+	}
+
 	return (
 		<OutsideClickHandler onOutsideClick={() => setModal(false)}>
 			<div className={styles.responsive_menu}>
@@ -42,9 +48,30 @@ export default function Menu({ closeModal, setModal }) {
 						animate='open'
 						exit='closed'
 					>
-						<motion.NavLink variants={itemVariants}>About Me</motion.NavLink>
-						<motion.NavLink variants={itemVariants}>Projects</motion.NavLink>
-						<motion.NavLink variants={itemVariants}>Contacts</motion.NavLink>
+						<motion.NavLink
+							variants={itemVariants}
+							onClick={handleMenuItemClick}
+						>
+							About Me
+						</motion.NavLink>
+						<motion.NavLink
+							variants={itemVariants}
+							onClick={() => {
+								handleScrollToSection('projects')
+								handleMenuItemClick()
+							}}
+						>
+							Projects
+						</motion.NavLink>
+						<motion.NavLink
+							variants={itemVariants}
+							onClick={() => {
+								handleScrollToSection('contacts')
+								handleMenuItemClick()
+							}}
+						>
+							Contacts
+						</motion.NavLink>
 					</motion.ul>
 				</AnimatePresence>
 			</div>

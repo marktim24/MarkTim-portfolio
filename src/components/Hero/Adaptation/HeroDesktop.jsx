@@ -13,6 +13,7 @@ const HeroDesktop = ({ modalOpen, openModal, closeModal }) => {
 					alt='Hero Image Alternative'
 				/>
 				<video className={styles.video} autoPlay muted loop>
+					<source src='/hero-video.mp4' type='video/mp4' />
 					<source src='/hero-video.webm' type='video/webm' />
 				</video>
 				<div className={styles.title}>
@@ -53,9 +54,23 @@ const HeroDesktop = ({ modalOpen, openModal, closeModal }) => {
 				</div>
 				{modalOpen && <DownloadModal closeModal={closeModal} />}
 			</motion.div>
-			<motion.div className={styles.experience}>
-				<img src='/total-experience.webp' alt='' />
-				<img src='/projects-count.webp' alt='' />
+			<motion.div className={styles.links}>
+				<motion.a
+					{...motionProps}
+					href='https://github.com/marktim24'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					GitHub
+				</motion.a>
+				<motion.a
+					{...motionProps}
+					href='https://www.behance.net/marktim24'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					Behance
+				</motion.a>
 			</motion.div>
 		</>
 	)

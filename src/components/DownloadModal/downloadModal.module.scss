@@ -8,6 +8,7 @@
 	transform: translate(-50%, -50%) !important;
 	background-color: $white-color;
 	padding: 30px;
+	z-index: 3;
 }
 
 .title {
@@ -20,7 +21,7 @@
 	padding: 0;
 	margin: 16px 0;
 	font-size: 20px;
-	line-height: 100%;
+	line-height: 125%;
 }
 
 .options li {

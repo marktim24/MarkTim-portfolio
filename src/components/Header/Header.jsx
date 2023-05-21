@@ -1,33 +1,23 @@
 import cn from 'classnames'
-import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { motionProps } from '../../assets/animation-settings/motionProps.js'
 import Menu from './Menu/Menu'
 import styles from './header.module.scss'
 
 export const Header = ({ title, navigation }) => {
-	const [modal, setModal] = useState(false)
-	const [dropdown, setDropdown] = useState(false)
-	const navigate = useNavigate()
-
-	const toggleDropdown = () => {
-		setDropdown(!dropdown)
-	}
+	const [modalOpen, setModalOpen] = useState(false)
 
 	const openModal = () => {
-		setModal(true)
-		setDropdown(false)
+		setModalOpen(true)
 	}
 
 	const closeModal = () => {
-		setModal(false)
-		setDropdown(false)
+		setModalOpen(false)
 	}
 
-	const handleContactClick = () => {
-		closeModal()
-		navigate('/contact')
+	const toggleModal = () => {
+		setModalOpen(prevModalOpen => !prevModalOpen)
 	}
 
 	return (
@@ -49,10 +39,10 @@ export const Header = ({ title, navigation }) => {
 					{navigation && (
 						<div>
 							<button
-								onClick={toggleDropdown}
+								onClick={toggleModal}
 								className={cn('', styles.responsive_button)}
 							>
-								{dropdown ? (
+								{modalOpen ? (
 									<svg
 										width='20'
 										height='18'
@@ -79,44 +69,10 @@ export const Header = ({ title, navigation }) => {
 									</svg>
 								)}
 							</button>
-							{dropdown && (
-								<Menu
-									closeModal={closeModal}
-									setModal={openModal}
-									modal={modal}
-								/>
+							{modalOpen && (
+								<Menu closeModal={closeModal} onMenuItemClick={closeModal} />
 							)}
 						</div>
-					)}
-
-					{navigation ? (
-						<div className={styles.mini_wrapper}>
-							<motion.div {...motionProps}>
-								<NavLink to='/about' onClick={closeModal}>
-									About Me
-								</NavLink>
-							</motion.div>
-							<motion.div {...motionProps}>
-								<NavLink to='/projects' onClick={closeModal}>
-									Projects
-								</NavLink>
-							</motion.div>
-							<motion.div {...motionProps}>
-								<NavLink to='/projects' onClick={closeModal}>
-									Contact Me
-								</NavLink>
-							</motion.div>
-						</div>
-					) : (
-						<motion.div className={styles.mini_wrapper_title} {...motionProps}>
-							<Link to='/'>
-								<img
-									className={styles.logo}
-									src='/logo.svg'
-									alt='Personal Logo'
-								/>
-							</Link>
-						</motion.div>
 					)}
 				</div>
 			</div>

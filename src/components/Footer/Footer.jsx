@@ -5,7 +5,7 @@ import styles from './footer.module.scss'
 
 const Footer = ({ navigation }) => {
 	return (
-		<footer className={styles.footer}>
+		<footer id='contacts' className={styles.footer}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.contacts}>
 					<h3>Links:</h3>

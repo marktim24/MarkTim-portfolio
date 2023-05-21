@@ -2,7 +2,7 @@
 
 .section {
 	color: $white-color;
-	margin-bottom: 70px;
+	margin-bottom: 140px;
 	img {
 		user-select: none;
 		pointer-events: none;
@@ -78,10 +78,27 @@
 	}
 }
 
-.experience {
+.links {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 40px;
+	font-size: 32px;
+	a {
+		width: 25%;
+		display: flex;
+		justify-content: flex-end;
+		color: $black-color;
+		text-decoration-line: underline;
+		text-decoration-skip-ink: none;
+		text-underline-offset: 0.2em;
+		&::before {
+			content: url('/link-icon.svg');
+			margin-right: 8px;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
 	*:last-child {
 		margin-left: 40px;
 	}
@@ -103,9 +120,6 @@
 		h2 {
 			font-size: 48px;
 		}
-	}
-	.experience {
-		justify-content: space-between;
 	}
 }
 
@@ -133,7 +147,7 @@
 	}
 
 	.heroBgAlternative {
-		height: 75%;
+		height: 77%;
 	}
 
 	.title {
@@ -150,8 +164,12 @@
 			max-width: none;
 		}
 	}
-	.experience {
+	.links {
 		margin-top: 60px;
+		justify-content: space-between;
+		a {
+			justify-content: center;
+		}
 	}
 	.credits {
 		display: flex;
@@ -167,6 +185,9 @@
 		color: $black-color;
 		border: 1px solid $black-color;
 		padding: 15px 45px;
+		svg {
+			height: 30px;
+		}
 		&:hover {
 			color: $white-color;
 			background-color: $black-color;
@@ -190,6 +211,12 @@
 	.credits {
 		p {
 			font-size: 16px;
+		}
+	}
+	.links {
+		font-size: 22px;
+		a {
+			width: 50%;
 		}
 	}
 }

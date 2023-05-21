@@ -8,6 +8,7 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 		<>
 			<div className={styles.description}>
 				<video className={styles.video} autoPlay muted loop>
+					<source src='/hero-video.mp4' type='video/mp4' />
 					<source src='/hero-video.webm' type='video/webm' />
 				</video>
 				<img
@@ -27,9 +28,23 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 					/>
 				</div>
 			</div>
-			<div className={styles.experience}>
-				<img src='/total-experience.webp' alt='' />
-				<img src='/projects-count.webp' alt='' />
+			<div className={styles.links}>
+				<motion.a
+					{...motionProps}
+					href='https://github.com/marktim24'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					GitHub
+				</motion.a>
+				<motion.a
+					{...motionProps}
+					href='https://www.behance.net/marktim24'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					Behance
+				</motion.a>
 			</div>
 			<div className={styles.credits}>
 				<p>
