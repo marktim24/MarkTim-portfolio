@@ -50,7 +50,10 @@ export default function Menu({ closeModal, setModal, onMenuItemClick }) {
 					>
 						<motion.NavLink
 							variants={itemVariants}
-							onClick={handleMenuItemClick}
+							onClick={() => {
+								handleScrollToSection('projects')
+								handleMenuItemClick()
+							}}
 						>
 							About Me
 						</motion.NavLink>

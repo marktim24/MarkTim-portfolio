@@ -2,7 +2,7 @@
 
 .section {
 	color: $white-color;
-	margin-bottom: 140px;
+	margin-bottom: 160px;
 	img {
 		user-select: none;
 		pointer-events: none;
@@ -108,6 +108,9 @@
 }
 
 @media (max-width: 1440px) {
+	.section {
+		margin-bottom: 60px;
+	}
 	.title {
 		h1 {
 			font-size: 105px;
@@ -135,6 +138,9 @@
 }
 
 @media (max-width: 1090px) {
+	.section {
+		margin-bottom: 80px;
+	}
 	.description {
 		grid-template-columns: 1fr;
 		background-size: 100% 75%;
@@ -165,7 +171,7 @@
 		}
 	}
 	.links {
-		margin-top: 60px;
+		margin-top: 80px;
 		justify-content: space-between;
 		a {
 			justify-content: center;
@@ -214,7 +220,7 @@
 		}
 	}
 	.links {
-		font-size: 22px;
+		font-size: 24px;
 		a {
 			width: 50%;
 		}

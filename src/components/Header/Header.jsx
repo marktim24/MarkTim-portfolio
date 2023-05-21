@@ -1,7 +1,9 @@
 import cn from 'classnames'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { motionProps } from '../../assets/animation-settings/motionProps.js'
+import { handleScrollToSection } from '../../assets/scrollUtils/scrollUtils.js'
 import Menu from './Menu/Menu'
 import styles from './header.module.scss'
 
@@ -25,12 +27,9 @@ export const Header = ({ title, navigation }) => {
 			<div className={cn('container', styles.container)}>
 				<div className={styles.content}>
 					<NavLink
-						style={
-							navigation
-								? {}
-								: { fontWeight: '600', textTransform: 'uppercase' }
-						}
-						className={styles.heading}
+						className={cn(styles.heading, {
+							[styles.navigationTitle]: !navigation,
+						})}
 						{...motionProps}
 						to='/'
 					>
@@ -73,6 +72,47 @@ export const Header = ({ title, navigation }) => {
 								<Menu closeModal={closeModal} onMenuItemClick={closeModal} />
 							)}
 						</div>
+					)}
+					{navigation ? (
+						<div className={styles.mini_wrapper}>
+							<motion.div {...motionProps}>
+								<NavLink
+									onClick={() => {
+										handleScrollToSection('projects')
+									}}
+								>
+									About Me
+								</NavLink>
+							</motion.div>
+							<motion.div {...motionProps}>
+								<NavLink
+									onClick={() => {
+										handleScrollToSection('projects')
+									}}
+								>
+									Projects
+								</NavLink>
+							</motion.div>
+							<motion.div {...motionProps}>
+								<NavLink
+									onClick={() => {
+										handleScrollToSection('contacts')
+									}}
+								>
+									Contact Me
+								</NavLink>
+							</motion.div>
+						</div>
+					) : (
+						<motion.div className={styles.mini_wrapper_title} {...motionProps}>
+							<Link to='/'>
+								<img
+									className={styles.logo}
+									src='/logo.svg'
+									alt='Personal Logo'
+								/>
+							</Link>
+						</motion.div>
 					)}
 				</div>
 			</div>
