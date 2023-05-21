@@ -4,13 +4,20 @@ import DownloadModal from '../../DownloadModal/DownloadModal'
 import styles from '../hero.module.scss'
 
 const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
+	const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+
 	return (
 		<>
 			<div className={styles.description}>
-				<video className={styles.video} autoPlay muted loop>
-					<source src='/hero-images/video/hero-video.mp4' type='video/mp4' />
-					<source src='/hero-images/video/hero-video.webm' type='video/webm' />
-				</video>
+				{!isMobile && (
+					<video className={styles.video} autoPlay muted loop>
+						<source src='/hero-images/video/hero-video.mp4' type='video/mp4' />
+						<source
+							src='/hero-images/video/hero-video.webm'
+							type='video/webm'
+						/>
+					</video>
+				)}
 				<img
 					src='/hero-images/hero-bg.webp'
 					className={styles.heroBgAlternative}
