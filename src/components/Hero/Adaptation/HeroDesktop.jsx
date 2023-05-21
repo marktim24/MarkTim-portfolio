@@ -8,18 +8,18 @@ const HeroDesktop = ({ modalOpen, openModal, closeModal }) => {
 		<>
 			<motion.div className={styles.description}>
 				<img
-					src='/hero-bg.webp'
+					src='/hero-images/hero-bg.webp'
 					className={styles.heroBgAlternative}
 					alt='Hero Image Alternative'
 				/>
 				<video className={styles.video} autoPlay muted loop>
-					<source src='/hero-video.mp4' type='video/mp4' />
-					<source src='/hero-video.webm' type='video/webm' />
+					<source src='/hero-images/video/hero-video.mp4' type='video/mp4' />
+					<source src='/hero-images/video/hero-video.webm' type='video/webm' />
 				</video>
 				<div className={styles.title}>
 					<h1>Mark Tim</h1>
 					<motion.img
-						src='/profile-pic.webp'
+						src='/hero-images/profile-pic.webp'
 						className={styles.profileImage}
 						alt=''
 					/>

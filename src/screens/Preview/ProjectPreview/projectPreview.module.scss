@@ -23,7 +23,7 @@
 		margin-bottom: 20px;
 		&::after {
 			margin-left: 15px;
-			content: url(/customPoing-icon.svg);
+			content: url('/icons/customPoing-icon.svg');
 			margin-right: 8px;
 		}
 	}
@@ -34,7 +34,7 @@
 		li {
 			font-size: 21px;
 			line-height: 150%;
-			list-style-image: url('/bullet-point.svg');
+			list-style-image: url('/icons/bullet-point.svg');
 			line-height: 100%;
 			margin-left: 10px;
 		}
@@ -83,7 +83,7 @@
 	h3 {
 		&::after {
 			margin-left: 15px;
-			content: url('/sourceLink-icon.svg');
+			content: url('/icons/sourceLink-icon.svg');
 		}
 	}
 }
@@ -93,7 +93,7 @@
 	h3 {
 		&::after {
 			margin-left: 15px;
-			content: url('/backLink-icon.svg');
+			content: url('/icons/backLink-icon.svg');
 		}
 	}
 }
@@ -209,7 +209,7 @@
 				height: 35px;
 				margin-left: 0px;
 				content: '';
-				background: url(/sourceLink-icon.svg) no-repeat center;
+				background: url('/icons/sourceLink-icon.svg') no-repeat center;
 				background-size: contain;
 			}
 		}

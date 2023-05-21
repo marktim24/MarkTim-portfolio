@@ -8,11 +8,11 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 		<>
 			<div className={styles.description}>
 				<video className={styles.video} autoPlay muted loop>
-					<source src='/hero-video.mp4' type='video/mp4' />
-					<source src='/hero-video.webm' type='video/webm' />
+					<source src='/hero-images/video/hero-video.mp4' type='video/mp4' />
+					<source src='/hero-images/video/hero-video.webm' type='video/webm' />
 				</video>
 				<img
-					src='/hero-bg.webp'
+					src='/hero-images/hero-bg.webp'
 					className={styles.heroBgAlternative}
 					alt='Hero Image Alternative'
 				/>
@@ -22,7 +22,7 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 					<h2>Designer</h2>
 					<img
 						to='/'
-						src='/profile-pic.webp'
+						src='/hero-images/profile-pic.webp'
 						className={styles.profileImage}
 						alt=''
 					/>

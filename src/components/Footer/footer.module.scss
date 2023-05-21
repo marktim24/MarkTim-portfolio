@@ -29,7 +29,7 @@
 		text-decoration-skip-ink: none;
 		text-underline-offset: 0.2em;
 		&::before {
-			content: url('/link-icon.svg');
+			content: url('/icons/link-icon.svg');
 			margin-right: 8px;
 		}
 		&:hover {

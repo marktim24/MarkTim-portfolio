@@ -106,11 +106,22 @@ export const Header = ({ title, navigation }) => {
 					) : (
 						<motion.div className={styles.mini_wrapper_title} {...motionProps}>
 							<Link to='/'>
-								<img
-									className={styles.logo}
-									src='/logo.svg'
-									alt='Personal Logo'
-								/>
+								<svg
+									width='50'
+									height='50'
+									viewBox='0 0 536 438'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<path
+										d='M0 438H536V380.692H57.2824V57.8376H151.865V268.097H222.517V57.8376H355.97V0L0 0.00323084V438Z'
+										fill='black'
+									/>
+									<path
+										d='M488.075 358.418L536 279.33V182.466H520.68L463.167 279.443L350.889 90.0561H257.771V358.418H326.747V174.398L438.259 358.418H488.075Z'
+										fill='black'
+									/>
+								</svg>
 							</Link>
 						</motion.div>
 					)}
