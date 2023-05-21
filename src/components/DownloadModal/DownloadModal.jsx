@@ -11,9 +11,8 @@ const DownloadModal = ({ closeModal }) => {
 	}
 
 	const handleOpenLink = () => {
-		// Implement the logic to open the link based on the selected option
+		//TODO: Update the links for the CVs
 		if (selectedOption === 'Graphic Design') {
-			// Open graphic design link
 			window.open(
 				'https://drive.google.com/file/d/1QuxCQ6vVTn35L_4I2GDKR7DB2aTTNq4b/view?usp=sharing',
 				'_blank'

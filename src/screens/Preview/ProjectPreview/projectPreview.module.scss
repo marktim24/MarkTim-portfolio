@@ -91,6 +91,8 @@
 .backButton {
 	margin-top: 40px;
 	h3 {
+		display: flex;
+		align-items: center;
 		&::after {
 			margin-left: 15px;
 			content: url('/icons/backLink-icon.svg');
