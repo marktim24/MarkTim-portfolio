@@ -25,7 +25,7 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 				/>
 				<div className={styles.title}>
 					<h1>Mark Tim</h1>
-					<h2>frontend developer</h2>
+					<h2>Frontend Developer</h2>
 					<h2>Designer</h2>
 					<img
 						to='/'

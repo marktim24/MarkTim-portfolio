@@ -12,20 +12,35 @@ const ProjectPreview = ({ relatedCards }) => {
 	const currentTitle = location.state?.currentTitle || title
 	const selectedCard = relatedCards.find(card => card.title === currentTitle)
 	const isSmallScreen = useMediaQuery({ query: '(max-width: 1250px)' })
+	const isMediumScreen = useMediaQuery({ query: '(max-width: 1440px)' })
 
 	return (
 		<section className={styles.section}>
 			<div className={cn('container', styles.container)}>
-				<div className={styles.tools}>
-					<h3>Tools</h3>
-					{selectedCard && (
-						<ul>
-							{selectedCard.instruments.map((instrument, index) => (
-								<li key={index}>{instrument}</li>
-							))}
-						</ul>
-					)}
-				</div>
+				{!isMediumScreen && (
+					<div className={styles.tools}>
+						<h3>Tools</h3>
+						{selectedCard && (
+							<ul>
+								{selectedCard.instruments.map((instrument, index) => (
+									<li key={index}>{instrument}</li>
+								))}
+							</ul>
+						)}
+					</div>
+				)}
+				{isSmallScreen && (
+					<div className={styles.tools}>
+						<h3>Tools</h3>
+						{selectedCard && (
+							<ul>
+								{selectedCard.instruments.map((instrument, index) => (
+									<li key={index}>{instrument}</li>
+								))}
+							</ul>
+						)}
+					</div>
+				)}
 				<div className={styles.content}>
 					<h2>{currentTitle}</h2>
 					{isSmallScreen && selectedCard && <p>{selectedCard.description}</p>}
@@ -33,12 +48,25 @@ const ProjectPreview = ({ relatedCards }) => {
 						<div className={styles.links}>
 							<button className={styles.linkButton} {...motionProps}>
 								<a
-									href={selectedCard && selectedCard.link}
+									href={selectedCard && Object.values(selectedCard.link)[0]}
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									<motion.h3 {...motionProps}>Go to Project</motion.h3>
+									<motion.h3 {...motionProps}>
+										{selectedCard.link && Object.keys(selectedCard.link)[0]}
+									</motion.h3>
 								</a>
+								{Object.keys(selectedCard.link)[1] === 'project' && (
+									<a
+										href={Object.values(selectedCard.link)[1]}
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<motion.h3 {...motionProps}>
+											{selectedCard.link && Object.keys(selectedCard.link)[1]}
+										</motion.h3>
+									</a>
+								)}
 							</button>
 						</div>
 					)}
@@ -49,17 +77,44 @@ const ProjectPreview = ({ relatedCards }) => {
 
 				{!isSmallScreen && (
 					<div className={styles.links}>
-						<button className={styles.linkButton} {...motionProps}>
-							<a
-								href={selectedCard && selectedCard.link}
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<motion.h3 {...motionProps}>Go to Project</motion.h3>
-							</a>
+						<div>
+							<button className={styles.linkButton} {...motionProps}>
+								<a
+									href={selectedCard && Object.values(selectedCard.link)[0]}
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<motion.h3 {...motionProps}>
+										{selectedCard.link && Object.keys(selectedCard.link)[0]}
+									</motion.h3>
+								</a>
+								{Object.keys(selectedCard.link)[1] === 'project' && (
+									<a
+										href={Object.values(selectedCard.link)[1]}
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<motion.h3 {...motionProps}>
+											{selectedCard.link && Object.keys(selectedCard.link)[1]}
+										</motion.h3>
+									</a>
+								)}
+							</button>
 
 							{selectedCard && <p>{selectedCard.description}</p>}
-						</button>
+							{isMediumScreen && (
+								<div className={styles.tools}>
+									<h3>Tools</h3>
+									{selectedCard && (
+										<ul>
+											{selectedCard.instruments.map((instrument, index) => (
+												<li key={index}>{instrument}</li>
+											))}
+										</ul>
+									)}
+								</div>
+							)}
+						</div>
 						<Link to={`/`} className={styles.backButton}>
 							<motion.h3 className='second-h3' {...motionProps}>
 								Home

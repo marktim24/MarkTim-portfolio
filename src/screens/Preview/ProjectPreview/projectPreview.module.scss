@@ -63,7 +63,6 @@
 	flex-direction: column;
 	align-items: end;
 	justify-content: space-between;
-	max-height: 75vh;
 	h3 {
 		display: flex;
 		text-align: right;
@@ -79,8 +78,14 @@
 }
 
 .linkButton {
+	display: flex;
 	max-width: 75%;
 	h3 {
+		font-size: 28px;
+		margin-left: 10px;
+		&:first-child {
+			margin-right: 30px;
+		}
 		&::after {
 			margin-left: 15px;
 			content: url('/icons/sourceLink-icon.svg');
@@ -106,33 +111,27 @@
 	}
 	.container {
 		grid-template-columns: 2fr 1fr;
-		grid-template-areas:
-			'content tools '
-			'content links';
 		gap: 30px;
 	}
 	.tools {
+		margin-top: 80px;
 		justify-content: unset;
-		align-items: end;
-	}
-	.links {
-		justify-content: space-around;
 	}
 	.linkButton {
 		p {
 			text-align: left;
 		}
 	}
+	.backButton {
+		max-height: unset;
+		max-height: 75vh;
+	}
 }
 
 @media (max-width: 1250px) {
 	.container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			'tools links'
-			'content content';
-		gap: 30px;
+		display: flex;
+		flex-direction: column;
 	}
 	.content {
 		max-width: 100%;
@@ -150,7 +149,6 @@
 	}
 	.linkButton {
 		display: flex;
-		flex-direction: row-reverse;
 		max-width: 100%;
 		h3 {
 			white-space: nowrap;
@@ -199,12 +197,21 @@
 	.tools,
 	.links {
 		h3 {
-			font-size: 24px;
+			font-size: 22px;
+		}
+	}
+
+	.tools {
+		li {
+			font-size: 18px !important;
 		}
 	}
 
 	.linkButton {
 		h3 {
+			&:first-child {
+				margin-right: 0;
+			}
 			&::after {
 				display: inline-block;
 				width: 30px;

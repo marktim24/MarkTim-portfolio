@@ -15,9 +15,9 @@ const Preview = () => {
 
 	useEffect(() => {
 		sessionStorage.removeItem('currentTitle')
-	}, [location])
+	}, [location, title])
 
-	const currentTitle = sessionStorage.getItem(title) || 'Default Title'
+	const currentTitle = sessionStorage.getItem('currentTitle') || 'Default Title'
 
 	const relatedCards = (
 		gallery.find(item => item.title === category)?.galleries || []

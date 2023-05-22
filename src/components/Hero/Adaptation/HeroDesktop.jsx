@@ -25,7 +25,7 @@ const HeroDesktop = ({ modalOpen, openModal, closeModal }) => {
 					/>
 				</div>
 				<div className={styles.credits}>
-					<h2>frontend developer</h2>
+					<h2>Frontend Developer</h2>
 					<h2>Designer</h2>
 					<p>
 						Eager and dedicated Junior Front-End Developer with over 1 year of

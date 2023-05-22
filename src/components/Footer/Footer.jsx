@@ -1,6 +1,7 @@
 import cn from 'classnames'
 import { motion } from 'framer-motion'
 import { motionProps } from '../../assets/animation-settings/motionProps.js'
+import { handleScrollToSection } from '../../assets/scrollUtils/scrollUtils.js'
 import styles from './footer.module.scss'
 
 const Footer = ({ navigation }) => {
@@ -48,9 +49,30 @@ const Footer = ({ navigation }) => {
 						<div>Mark Tim Portfolio 2023 ©</div>
 						<nav>
 							<ul className={styles.nav}>
-								<motion.li {...motionProps}>About Me</motion.li>
-								<motion.li {...motionProps}>Projects</motion.li>
-								<motion.li {...motionProps}>Contacts</motion.li>
+								<motion.li
+									onClick={() => {
+										handleScrollToSection('skills')
+									}}
+									{...motionProps}
+								>
+									About Me
+								</motion.li>
+								<motion.li
+									onClick={() => {
+										handleScrollToSection('projects')
+									}}
+									{...motionProps}
+								>
+									Projects
+								</motion.li>
+								<motion.li
+									onClick={() => {
+										handleScrollToSection('links')
+									}}
+									{...motionProps}
+								>
+									Contacts
+								</motion.li>
 							</ul>
 						</nav>
 					</div>

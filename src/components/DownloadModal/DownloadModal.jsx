@@ -14,13 +14,13 @@ const DownloadModal = ({ closeModal }) => {
 		//TODO: Update the links for the CVs
 		if (selectedOption === 'Graphic Design') {
 			window.open(
-				'https://drive.google.com/file/d/1QuxCQ6vVTn35L_4I2GDKR7DB2aTTNq4b/view?usp=sharing',
+				'https://drive.google.com/file/d/1MbRHJz6DylVltX23Lw4D8X8-oG0TCtLD/view?usp=sharing',
 				'_blank'
 			)
 		} else if (selectedOption === 'Frontend') {
 			// Open frontend link
 			window.open(
-				'https://drive.google.com/file/d/1QuxCQ6vVTn35L_4I2GDKR7DB2aTTNq4b/view?usp=sharing',
+				'https://drive.google.com/file/d/1d7Ejk3B_8NFNL8HwGsCY7BdM2Wtl_Fhl/view?usp=sharing',
 				'_blank'
 			)
 		}
