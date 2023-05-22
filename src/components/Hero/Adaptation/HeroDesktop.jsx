@@ -7,11 +7,6 @@ const HeroDesktop = ({ modalOpen, openModal, closeModal }) => {
 	return (
 		<>
 			<motion.div className={styles.description}>
-				<img
-					src='/hero-images/hero-bg.webp'
-					className={styles.heroBgAlternative}
-					alt='Hero Image Alternative'
-				/>
 				<video className={styles.video} autoPlay muted loop>
 					<source src='/hero-images/video/hero-video.mp4' type='video/mp4' />
 					<source src='/hero-images/video/hero-video.webm' type='video/webm' />

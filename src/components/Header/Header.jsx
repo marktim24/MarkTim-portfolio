@@ -99,7 +99,7 @@ export const Header = ({ title, navigation }) => {
 										handleScrollToSection('contacts')
 									}}
 								>
-									Contact Me
+									Contacts
 								</NavLink>
 							</motion.div>
 						</div>
