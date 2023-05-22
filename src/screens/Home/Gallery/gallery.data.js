@@ -9,8 +9,6 @@ const gallery = [
 				previewImage:
 					'/portfolio-db/preview/graphic-design/Logofolio_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/Logofolio.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -22,8 +20,6 @@ const gallery = [
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PastaBrand_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PastaBrand.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -35,8 +31,6 @@ const gallery = [
 				previewImage:
 					'/portfolio-db/preview/graphic-design/Illuminartist_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/Illuminartist.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -48,8 +42,6 @@ const gallery = [
 				previewImage:
 					'/portfolio-db/preview/graphic-design/NeroCraft_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/NeroCraft.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -61,8 +53,6 @@ const gallery = [
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PreciseMedia_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PreciseMedia.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -74,8 +64,6 @@ const gallery = [
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PrintDesign_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PrintDesign.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -86,8 +74,6 @@ const gallery = [
 				title: 'MARS Graphics',
 				instruments: ['Illustrator', 'Photoshop'],
 				cardImage: '/portfolio-db/projects/graphic-design/MarsGraphics.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -103,8 +89,6 @@ const gallery = [
 				title: 'Precise Site',
 				instruments: ['Illustrator', 'Photoshop'],
 				cardImage: '/portfolio-db/projects/PreciseSite.png',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					github: 'https://www.behance.net/gallery/168959915/Logofolio',
 					project: 'https://www.behance.net/gallery/168959915/Logofolio',
@@ -116,8 +100,6 @@ const gallery = [
 				title: 'Age Calculator Component',
 				instruments: ['Illustrator', 'Photoshop'],
 				cardImage: '/portfolio-db/projects/frontend/AgeComponent.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					github: 'https://www.behance.net/gallery/168959915/Logofolio',
 					project: 'https://www.behance.net/gallery/168959915/Logofolio',
@@ -129,8 +111,6 @@ const gallery = [
 				title: 'Age Calculator Component',
 				instruments: ['Illustrator', 'Photoshop'],
 				cardImage: '/portfolio-db/projects/frontend/AgeComponent.webp',
-				description:
-					'This project description///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///This project about///',
 				link: {
 					github: 'https://www.behance.net/gallery/168959915/Logofolio',
 					project: 'https://www.behance.net/gallery/168959915/Logofolio',

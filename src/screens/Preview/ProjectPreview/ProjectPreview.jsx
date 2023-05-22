@@ -43,7 +43,6 @@ const ProjectPreview = ({ relatedCards }) => {
 				)}
 				<div className={styles.content}>
 					<h2>{currentTitle}</h2>
-					{isSmallScreen && selectedCard && <p>{selectedCard.description}</p>}
 					{isSmallScreen && (
 						<div className={styles.links}>
 							<button className={styles.linkButton} {...motionProps}>
@@ -101,7 +100,6 @@ const ProjectPreview = ({ relatedCards }) => {
 								)}
 							</button>
 
-							{selectedCard && <p>{selectedCard.description}</p>}
 							{isMediumScreen && (
 								<div className={styles.tools}>
 									<h3>Tools</h3>

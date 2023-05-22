@@ -109,6 +109,7 @@
 	}
 	.container {
 		grid-template-columns: 2fr 1fr;
+		grid-template-areas: 'content links';
 		gap: 30px;
 	}
 	.tools {
