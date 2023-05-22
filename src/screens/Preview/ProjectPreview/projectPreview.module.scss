@@ -35,8 +35,7 @@
 			font-size: 21px;
 			line-height: 150%;
 			list-style-image: url('/icons/bullet-point.svg');
-			line-height: 100%;
-			margin-left: 10px;
+			line-height: 125%;
 		}
 	}
 }
@@ -82,7 +81,6 @@
 	max-width: 75%;
 	h3 {
 		font-size: 28px;
-		margin-left: 10px;
 		&:first-child {
 			margin-right: 30px;
 		}
@@ -142,9 +140,13 @@
 		}
 	}
 	.tools {
+		margin-top: 0;
 		align-items: unset;
 		ul {
 			flex-direction: row;
+		}
+		li {
+			margin-left: 10px;
 		}
 	}
 	.linkButton {
