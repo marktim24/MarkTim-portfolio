@@ -1,6 +1,6 @@
 const gallery = [
 	{
-		title: 'Graphic design',
+		title: 'Designed',
 		galleries: [
 			{
 				title: 'Logofolio',
@@ -9,6 +9,8 @@ const gallery = [
 				previewImage:
 					'/portfolio-db/preview/graphic-design/Logofolio_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/Logofolio.webp',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aliquam suscipit non quam ipsam iste amet omnis explicabo blanditiis enim!',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -81,7 +83,7 @@ const gallery = [
 		],
 	},
 	{
-		title: 'Frontend',
+		title: 'Developed',
 		galleries: [
 			{
 				previewImage:
