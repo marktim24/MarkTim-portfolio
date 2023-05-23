@@ -5,12 +5,12 @@ const gallery = [
 			{
 				title: 'Logofolio',
 				hashTag: '#Logo Design',
-				instruments: ['Illustrator', 'Photoshop', 'Figma'],
+				instruments: ['Adobe Illustrator', 'Adobe Photoshop'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/Logofolio_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/Logofolio.webp',
 				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aliquam suscipit non quam ipsam iste amet omnis explicabo blanditiis enim!',
+					'Feel free to explore my Logofolio, where each logo tells a story and represents the synergy between creativity, strategy, and innovation. I hope you find inspiration and a glimpse into my creative journey as you browse through these carefully crafted logos.',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
@@ -18,18 +18,21 @@ const gallery = [
 			{
 				title: 'Delicieuses Pates',
 				hashTag: '#Pasta brand',
-				instruments: ['Illustrator', 'Photoshop'],
+				instruments: ['Adobe Illustrator', 'Adobe Photoshop'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PastaBrand_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PastaBrand.webp',
+				description:
+					'With meticulous attention to detail, I have designed packaging solutions that not only enhance the overall brand experience but also effectively communicate the quality, variety, and authenticity of the pasta products.',
 				link: {
-					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
+					behance:
+						'https://www.behance.net/gallery/171312995/Brand-Identity-Package-Design-Dlicieuses-Pates',
 				},
 			},
 			{
 				title: 'Illuminartist',
 				hashTag: '#Artist event',
-				instruments: ['Illustrator', 'Photoshop'],
+				instruments: ['Adobe Illustrator', 'Adobe Photoshop'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/Illuminartist_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/Illuminartist.webp',
@@ -40,18 +43,19 @@ const gallery = [
 			{
 				title: 'Nero',
 				hashTag: '#Craft academy',
-				instruments: ['Illustrator', 'Photoshop'],
+				instruments: ['Adobe Illustrator', 'Adobe Photoshop', 'Figma'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/NeroCraft_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/NeroCraft.webp',
 				link: {
-					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
+					behance:
+						'https://www.behance.net/gallery/171315467/Nero-Craft-Academy',
 				},
 			},
 			{
 				title: 'Precise Digital',
 				hashTag: '#Social media ',
-				instruments: ['Illustrator', 'Photoshop', 'Cinema 4D'],
+				instruments: ['Adobe Photoshop', 'Cinema 4D'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PreciseMedia_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PreciseMedia.webp',
@@ -61,8 +65,8 @@ const gallery = [
 			},
 			{
 				title: 'Print Design',
-				hashTag: '#Identity',
-				instruments: ['Illustrator', 'Photoshop'],
+				hashTag: '',
+				instruments: ['Adobe Indesign', 'Photoshop'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PrintDesign_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PrintDesign.webp',
@@ -71,10 +75,10 @@ const gallery = [
 				},
 			},
 			{
+				title: 'MARS Graphics',
 				previewImage:
 					'/portfolio-db/preview/graphic-design/MarsGraphics_Preview.webp',
-				title: 'MARS Graphics',
-				instruments: ['Illustrator', 'Photoshop'],
+				instruments: ['Adobe Photoshop', 'Cinema 4D'],
 				cardImage: '/portfolio-db/projects/graphic-design/MarsGraphics.webp',
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
@@ -86,36 +90,71 @@ const gallery = [
 		title: 'Developed',
 		galleries: [
 			{
+				title: 'Personal Website',
+				hashTag: '#This Website',
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PreciseSite_Preview.webp',
-				title: 'Precise Site',
 				instruments: ['Illustrator', 'Photoshop'],
 				cardImage: '/portfolio-db/projects/PreciseSite.png',
 				link: {
-					github: 'https://www.behance.net/gallery/168959915/Logofolio',
-					project: 'https://www.behance.net/gallery/168959915/Logofolio',
+					github: 'https://github.com/marktim24/MarkTim-portfolio',
 				},
 			},
 			{
-				previewImage:
-					'/portfolio-db/preview/frontend/AgeComponent_Preview.webp',
-				title: 'Age Calculator Component',
+				title: 'Precise Site',
 				instruments: ['Illustrator', 'Photoshop'],
-				cardImage: '/portfolio-db/projects/frontend/AgeComponent.webp',
+				previewImage:
+					'/portfolio-db/preview/graphic-design/PreciseSite_Preview.webp',
+				cardImage: '/portfolio-db/projects/PreciseSite.png',
 				link: {
 					github: 'https://www.behance.net/gallery/168959915/Logofolio',
-					project: 'https://www.behance.net/gallery/168959915/Logofolio',
+					deploy: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
 			},
 			{
+				title: 'Age Calculator',
+				hashTag: '#Component',
 				previewImage:
 					'/portfolio-db/preview/frontend/AgeComponent_Preview.webp',
-				title: 'Age Calculator Component',
-				instruments: ['Illustrator', 'Photoshop'],
+				instruments: ['React JS', 'SCSS', 'GitHub Pages'],
 				cardImage: '/portfolio-db/projects/frontend/AgeComponent.webp',
+				description:
+					'React Vite Age Calculator component developed as a Daily Frontend Challenge',
 				link: {
-					github: 'https://www.behance.net/gallery/168959915/Logofolio',
-					project: 'https://www.behance.net/gallery/168959915/Logofolio',
+					github: 'https://github.com/marktim24/age-calculator-app-main',
+					project: 'https://marktim24.github.io/age-calculator-app-main/',
+				},
+			},
+			{
+				title: 'Palorinne Construction',
+				hashTag: '#Landing Page',
+				instruments: ['HTML/CSS', 'JQuery', 'Figma'],
+				previewImage: '/portfolio-db/preview/frontend/Palorinne_Preview.webp',
+				cardImage: '/portfolio-db/projects/frontend/Palorinne.jpg',
+				link: {
+					github: 'https://github.com/marktim24/PalorinneOy-Landing-Page',
+					project: 'https://marktim24.github.io/PalorinneOy-Landing-Page/',
+				},
+			},
+			{
+				title: 'Qubble Data',
+				hashTag: '#Landing Page',
+				instruments: ['HTML/CSS', 'JQuery', 'Figma'],
+				previewImage: '/portfolio-db/preview/frontend/Palorinne_Preview.webp',
+				cardImage: '/portfolio-db/projects/frontend/Palorinne.jpg',
+				link: {
+					github: 'https://github.com/marktim24/PalorinneOy-Landing-Page',
+					project: 'https://marktim24.github.io/PalorinneOy-Landing-Page/',
+				},
+			},
+			{
+				title: 'memoria del futuro',
+				hashTag: '#Cooming Soon',
+				instruments: ['Next JS', 'React', 'SCSS'],
+				previewImage: '/portfolio-db/preview/frontend/Memoria_Preview.webp',
+				cardImage: '/portfolio-db/projects/frontend/Memoria.jpg',
+				link: {
+					Coming_Soon: '',
 				},
 			},
 		],

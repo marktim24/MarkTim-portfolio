@@ -46,26 +46,54 @@ const HeroDesktop = ({ modalOpen, openModal, closeModal }) => {
 						</svg>
 						Download <b>CV</b>
 					</motion.button>
+					<motion.div className={styles.links}>
+						<motion.a
+							{...motionProps}
+							href='https://github.com/marktim24'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<svg
+								width='20'
+								height='20'
+								viewBox='0 0 20 20'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path
+									fill-rule='evenodd'
+									clip-rule='evenodd'
+									d='M16.8499 18.4772H18.8881V0.0390625H0.524913V2.08218H15.3499L0.524902 17.0383L0.524979 18.4817H1.96737L16.8499 3.46781V18.4772Z'
+									fill='white'
+								/>
+							</svg>
+							GitHub
+						</motion.a>
+						<motion.a
+							{...motionProps}
+							href='https://www.behance.net/marktim24'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<svg
+								width='20'
+								height='20'
+								viewBox='0 0 20 20'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path
+									fill-rule='evenodd'
+									clip-rule='evenodd'
+									d='M16.8499 18.4772H18.8881V0.0390625H0.524913V2.08218H15.3499L0.524902 17.0383L0.524979 18.4817H1.96737L16.8499 3.46781V18.4772Z'
+									fill='white'
+								/>
+							</svg>
+							Behance
+						</motion.a>
+					</motion.div>
 				</div>
 				{modalOpen && <DownloadModal closeModal={closeModal} />}
-			</motion.div>
-			<motion.div className={styles.links}>
-				<motion.a
-					{...motionProps}
-					href='https://github.com/marktim24'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					GitHub
-				</motion.a>
-				<motion.a
-					{...motionProps}
-					href='https://www.behance.net/marktim24'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Behance
-				</motion.a>
 			</motion.div>
 		</>
 	)

@@ -56,7 +56,7 @@ const ProjectPreview = ({ relatedCards }) => {
 										{selectedCard.link && Object.keys(selectedCard.link)[0]}
 									</motion.h3>
 								</a>
-								{Object.keys(selectedCard.link)[1] === 'project' && (
+								{Object.keys(selectedCard.link)[1] && (
 									<a
 										href={Object.values(selectedCard.link)[1]}
 										target='_blank'
@@ -88,7 +88,7 @@ const ProjectPreview = ({ relatedCards }) => {
 										{selectedCard.link && Object.keys(selectedCard.link)[0]}
 									</motion.h3>
 								</a>
-								{Object.keys(selectedCard.link)[1] === 'project' && (
+								{Object.keys(selectedCard.link)[1] && (
 									<a
 										href={Object.values(selectedCard.link)[1]}
 										target='_blank'
@@ -100,7 +100,7 @@ const ProjectPreview = ({ relatedCards }) => {
 									</a>
 								)}
 							</button>
-							{selectedCard && <p>{selectedCard.description}</p>}
+							{selectedCard.description && <p>{selectedCard.description}</p>}
 							{isMediumScreen && (
 								<div className={styles.tools}>
 									<h3>Tools</h3>

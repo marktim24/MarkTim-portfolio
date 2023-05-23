@@ -8,8 +8,8 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 		<>
 			<div className={styles.description}>
 				<video className={styles.video} autoPlay muted loop>
-					<source src='/hero-images/video/hero-video.mp4' type='video/mp4' />
 					<source src='/hero-images/video/hero-video.webm' type='video/webm' />
+					<source src='/hero-images/video/hero-video.mp4' type='video/mp4' />
 				</video>
 
 				<div className={styles.title}>
@@ -23,24 +23,6 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 						alt=''
 					/>
 				</div>
-			</div>
-			<div className={styles.links}>
-				<motion.a
-					{...motionProps}
-					href='https://github.com/marktim24'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					GitHub
-				</motion.a>
-				<motion.a
-					{...motionProps}
-					href='https://www.behance.net/marktim24'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Behance
-				</motion.a>
 			</div>
 			<div className={styles.credits}>
 				<p>
@@ -69,6 +51,52 @@ const HeroMobile = ({ modalOpen, openModal, closeModal }) => {
 					</svg>
 					Download <b>CV</b>
 				</motion.button>
+			</div>
+			<div className={styles.links}>
+				<motion.a
+					{...motionProps}
+					href='https://github.com/marktim24'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<svg
+						width='20'
+						height='20'
+						viewBox='0 0 20 20'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<path
+							fill-rule='evenodd'
+							clip-rule='evenodd'
+							d='M16.8499 18.4772H18.8881V0.0390625H0.524913V2.08218H15.3499L0.524902 17.0383L0.524979 18.4817H1.96737L16.8499 3.46781V18.4772Z'
+							fill='black'
+						/>
+					</svg>
+					GitHub
+				</motion.a>
+				<motion.a
+					{...motionProps}
+					href='https://www.behance.net/marktim24'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<svg
+						width='20'
+						height='20'
+						viewBox='0 0 20 20'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<path
+							fill-rule='evenodd'
+							clip-rule='evenodd'
+							d='M16.8499 18.4772H18.8881V0.0390625H0.524913V2.08218H15.3499L0.524902 17.0383L0.524979 18.4817H1.96737L16.8499 3.46781V18.4772Z'
+							fill='black'
+						/>
+					</svg>
+					Behance
+				</motion.a>
 			</div>
 			{modalOpen && <DownloadModal closeModal={closeModal} />}
 		</>

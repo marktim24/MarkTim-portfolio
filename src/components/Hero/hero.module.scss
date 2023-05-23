@@ -80,30 +80,24 @@
 
 .links {
 	display: flex;
-	justify-content: flex-end;
-	margin-top: 40px;
+	flex-direction: row;
+	align-items: flex-end;
+	margin: 0 0 80px 0 !important;
 	font-size: 32px;
 	a {
-		width: 25%;
-		display: flex;
-		justify-content: flex-end;
-		color: $black-color;
+		color: $white-color;
 		text-decoration-line: underline;
 		text-decoration-skip-ink: none;
 		text-underline-offset: 0.2em;
-		&::before {
-			content: url('/icons/link-icon.svg');
-			margin-right: 8px;
-		}
 		&:hover {
 			text-decoration: none;
 		}
+		&:first-child {
+			margin-right: 50px;
+		}
 	}
-	*:last-child {
-		margin-left: 40px;
-	}
-	img {
-		max-width: 40%;
+	svg {
+		margin-right: 5px;
 	}
 }
 
@@ -171,9 +165,11 @@
 		}
 	}
 	.links {
+		font-size: 38px;
 		margin-top: 80px;
 		justify-content: space-between;
 		a {
+			color: $black-color;
 			justify-content: center;
 		}
 	}
@@ -221,8 +217,5 @@
 	}
 	.links {
 		font-size: 24px;
-		a {
-			width: 50%;
-		}
 	}
 }
