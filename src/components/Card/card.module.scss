@@ -30,7 +30,7 @@
 	&:hover {
 		border-radius: 10px;
 		.iconsUsed {
-			opacity: 0.75;
+			transform: scale(1.1);
 		}
 	}
 }
