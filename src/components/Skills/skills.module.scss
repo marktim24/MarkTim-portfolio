@@ -27,24 +27,6 @@
 			font-size: 16px;
 		}
 	}
-
-	.skillItem {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		img {
-			margin-right: 10px;
-		}
-		@media (max-width: 1440px) {
-			img {
-				max-height: 30px;
-			}
-		}
-		@media (max-width: 1090px) {
-			margin-top: 20px;
-		}
-	}
-
 	@media (max-width: 1090px) {
 		display: flex;
 		flex-direction: column;
@@ -59,5 +41,22 @@
 		li {
 			font-size: 16px;
 		}
+	}
+}
+
+.skillItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	img {
+		margin-right: 10px;
+	}
+	@media (max-width: 1440px) {
+		img {
+			max-height: 30px;
+		}
+	}
+	@media (max-width: 1090px) {
+		margin-top: 20px;
 	}
 }

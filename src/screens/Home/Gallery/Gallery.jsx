@@ -12,7 +12,6 @@ export default function Gallery() {
 	gallery.map(item => options.push(item.title))
 
 	const [direction, setDirection] = useState(gallery[0].title)
-
 	return (
 		<motion.section id='projects' className={styles.section}>
 			<div className={cn('container', styles.container)}>
@@ -45,7 +44,13 @@ export default function Gallery() {
 					{gallery
 						.find(item => item.title === direction)
 						?.galleries.map((item, index) => {
-							return <Card key={index} category={direction} {...item} />
+							return (
+								<Card
+									key={`${direction}-${item.title}`}
+									category={direction}
+									{...item}
+								/>
+							)
 						})}
 				</div>
 			</div>

@@ -34,7 +34,6 @@
 		li {
 			font-size: 21px;
 			line-height: 150%;
-			list-style-image: url('/icons/bullet-point.svg');
 			line-height: 125%;
 		}
 	}
@@ -60,7 +59,6 @@
 	grid-area: links;
 	display: flex;
 	flex-direction: column;
-	align-items: end;
 	justify-content: space-between;
 	h3 {
 		display: flex;
@@ -68,11 +66,6 @@
 		margin-bottom: 30px;
 		max-width: min-content;
 		align-items: center;
-	}
-	p {
-		font-size: 16px;
-		line-height: 140%;
-		text-align: left;
 	}
 }
 
@@ -100,6 +93,24 @@
 			margin-left: 15px;
 			content: url('/icons/backLink-icon.svg');
 		}
+	}
+}
+
+.bigScreensLinks {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.bigScreensDescription {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	p {
+		font-size: 24px;
+		line-height: 140%;
+		text-align: left;
 	}
 }
 
@@ -161,6 +172,7 @@
 	.backButton {
 		display: flex;
 		justify-content: end;
+		width: 100%;
 	}
 }
 

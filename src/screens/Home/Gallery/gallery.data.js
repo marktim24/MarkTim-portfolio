@@ -1,3 +1,17 @@
+import designSkills from '../../../components/Skills/Data/Skills/design.data'
+import frontendSkills from '../../../components/Skills/Data/Skills/frontend.data'
+
+export function getIconsForInstruments(instruments) {
+	const allSkills = [...frontendSkills, ...designSkills]
+	return instruments.map(instrument => {
+		const skill = allSkills.find(
+			item => item.skill.toLowerCase() === instrument.toLowerCase()
+		)
+		console.log('instrument:', instrument, 'found skill:', skill)
+		return skill ? skill.icon : ''
+	})
+}
+
 const gallery = [
 	{
 		title: 'Designed',
@@ -14,6 +28,7 @@ const gallery = [
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
+				icons: getIconsForInstruments(['Illustrator', 'Photoshop']),
 			},
 			{
 				title: 'Delicieuses Pates',
@@ -28,6 +43,7 @@ const gallery = [
 					behance:
 						'https://www.behance.net/gallery/171312995/Brand-Identity-Package-Design-Dlicieuses-Pates',
 				},
+				icons: getIconsForInstruments(['Illustrator', 'Photoshop']),
 			},
 			{
 				title: 'Illuminartist',
@@ -39,6 +55,7 @@ const gallery = [
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
+				icons: getIconsForInstruments(['Illustrator', 'Photoshop']),
 			},
 			{
 				title: 'Nero',
@@ -51,6 +68,7 @@ const gallery = [
 					behance:
 						'https://www.behance.net/gallery/171315467/Nero-Craft-Academy',
 				},
+				icons: getIconsForInstruments(['Illustrator', 'Photoshop', 'Figma']),
 			},
 			{
 				title: 'Precise Digital',
@@ -62,6 +80,7 @@ const gallery = [
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
+				icons: getIconsForInstruments(['Illustrator', 'Photoshop', 'Figma']),
 			},
 			{
 				title: 'Print Design',
@@ -73,6 +92,7 @@ const gallery = [
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
+				icons: getIconsForInstruments(['Illustrator', 'Photoshop', 'Figma']),
 			},
 			{
 				title: 'MARS Graphics',
@@ -83,6 +103,7 @@ const gallery = [
 				link: {
 					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
 				},
+				icons: getIconsForInstruments(['Illustrator', 'Photoshop', 'Figma']),
 			},
 		],
 	},
@@ -92,13 +113,14 @@ const gallery = [
 			{
 				title: 'Personal Website',
 				hashTag: '#This Website',
-				previewImage:
-					'/portfolio-db/preview/graphic-design/PreciseSite_Preview.webp',
 				instruments: ['Illustrator', 'Photoshop'],
+				previewImage:
+					'/portfolio-db/preview/frontend/PersonalWebsite_Preview.webp',
 				cardImage: '/portfolio-db/projects/PreciseSite.png',
 				link: {
 					github: 'https://github.com/marktim24/MarkTim-portfolio',
 				},
+				icons: getIconsForInstruments(['HTML/ CSS', 'Vanilla JS', 'Figma']),
 			},
 			{
 				title: 'Precise Site',

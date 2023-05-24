@@ -21,7 +21,8 @@
 
 .head {
 	h2 {
-		margin-left: 25%;
+		display: flex;
+		justify-content: center;
 	}
 	@media (max-width: 1200px) {
 		text-align: center;

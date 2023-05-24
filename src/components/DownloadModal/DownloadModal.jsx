@@ -4,21 +4,19 @@ import OutsideClickHandler from 'react-outside-click-handler'
 import styles from './DownloadModal.module.scss'
 
 const DownloadModal = ({ closeModal }) => {
-	const [selectedOption, setSelectedOption] = useState(null)
+	const [selectedOption, setSelectedOption] = useState('Graphic Design')
 
 	const handleOptionClick = option => {
 		setSelectedOption(option)
 	}
 
 	const handleOpenLink = () => {
-		//TODO: Update the links for the CVs
 		if (selectedOption === 'Graphic Design') {
 			window.open(
 				'https://drive.google.com/file/d/1MbRHJz6DylVltX23Lw4D8X8-oG0TCtLD/view?usp=sharing',
 				'_blank'
 			)
 		} else if (selectedOption === 'Frontend') {
-			// Open frontend link
 			window.open(
 				'https://drive.google.com/file/d/1d7Ejk3B_8NFNL8HwGsCY7BdM2Wtl_Fhl/view?usp=sharing',
 				'_blank'
@@ -73,6 +71,12 @@ const DownloadModal = ({ closeModal }) => {
 					</svg>
 				</button>
 			</motion.div>
+			<motion.div
+				className={styles.backgroundBlur}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 0.5 }}
+				transition={{ duration: 0.5 }}
+			></motion.div>
 		</OutsideClickHandler>
 	)
 }
