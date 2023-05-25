@@ -55,7 +55,8 @@ const gallery = [
 				description:
 					'Illuminartist is a unique, one-of-a-kind supply store geared towards the passionate artist community. It  create a vibrant, engaging platform that unites artists from all walks of life through diverse events.',
 				link: {
-					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
+					behance:
+						'https://www.behance.net/gallery/171475955/Illuminartist-Artist-Event',
 				},
 				icons: getIconsForInstruments(['CorelDraw', 'Photoshop']),
 			},
@@ -169,11 +170,11 @@ const gallery = [
 				title: 'Qubble Data',
 				hashTag: '#Landing Page',
 				instruments: ['HTML/CSS', 'Vanilla JS', 'Adobe XD'],
-				previewImage: '/portfolio-db/preview/frontend/Palorinne_Preview.webp',
+				previewImage: '/portfolio-db/preview/frontend/Qubble_Preview.webp',
 				cardImage: '/portfolio-db/projects/frontend/Palorinne.webp',
 				link: {
-					github: 'https://github.com/marktim24/PalorinneOy-Landing-Page',
-					project: 'https://marktim24.github.io/PalorinneOy-Landing-Page/',
+					github: 'https://github.com/marktim24/Data-analytics-Landing',
+					project: 'https://marktim24.github.io/Data-analytics-Landing/',
 				},
 				icons: getIconsForInstruments(['HTML/ CSS', 'Vanilla JS', 'XD']),
 			},

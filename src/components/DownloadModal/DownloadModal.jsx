@@ -11,16 +11,27 @@ const DownloadModal = ({ closeModal }) => {
 	}
 
 	const handleOpenLink = () => {
-		if (selectedOption === 'Graphic Design') {
-			window.open(
-				'https://drive.google.com/file/d/1MbRHJz6DylVltX23Lw4D8X8-oG0TCtLD/view?usp=sharing',
-				'_blank'
-			)
-		} else if (selectedOption === 'Frontend') {
-			window.open(
-				'https://drive.google.com/file/d/1d7Ejk3B_8NFNL8HwGsCY7BdM2Wtl_Fhl/view?usp=sharing',
-				'_blank'
-			)
+		switch (selectedOption) {
+			case 'Graphic Design':
+				window.open(
+					'https://drive.google.com/file/d/1k2pjgV65hFmuHzO2lIJvdQ8Ikf4sCJrv/view?usp=sharing',
+					'_blank'
+				)
+				break
+
+			case 'Frontend':
+				window.open(
+					'https://drive.google.com/file/d/1B5FFKIKEtNQY8VDDLaMySKYsuzjgkpvX/view?usp=sharing',
+					'_blank'
+				)
+				break
+
+			case 'System Administrator':
+				window.open(
+					'https://drive.google.com/file/d/1wlkED3vs2IF7KGMNnMuKtLJnJy6PfmeW/view?usp=sharing',
+					'_blank'
+				)
+				break
 		}
 	}
 
@@ -51,6 +62,14 @@ const DownloadModal = ({ closeModal }) => {
 						onClick={() => handleOptionClick('Frontend')}
 					>
 						Frontend
+					</li>
+					<li
+						className={
+							selectedOption === 'System Administrator' ? styles.selected : ''
+						}
+						onClick={() => handleOptionClick('System Administrator')}
+					>
+						System Admin.
 					</li>
 				</ul>
 				<button className={styles.downloadButton} onClick={handleOpenLink}>
