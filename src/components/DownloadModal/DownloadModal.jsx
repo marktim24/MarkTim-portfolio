@@ -4,7 +4,7 @@ import OutsideClickHandler from 'react-outside-click-handler'
 import styles from './DownloadModal.module.scss'
 
 const DownloadModal = ({ closeModal }) => {
-	const [selectedOption, setSelectedOption] = useState('Graphic Design')
+	const [selectedOption, setSelectedOption] = useState('Frontend')
 
 	const handleOptionClick = option => {
 		setSelectedOption(option)
@@ -12,23 +12,15 @@ const DownloadModal = ({ closeModal }) => {
 
 	const handleOpenLink = () => {
 		switch (selectedOption) {
-			case 'Graphic Design':
-				window.open(
-					'https://drive.google.com/file/d/1k2pjgV65hFmuHzO2lIJvdQ8Ikf4sCJrv/view?usp=sharing',
-					'_blank'
-				)
-				break
-
 			case 'Frontend':
 				window.open(
-					'https://drive.google.com/file/d/1B5FFKIKEtNQY8VDDLaMySKYsuzjgkpvX/view?usp=sharing',
+					'https://drive.google.com/file/d/1Pye6VeNcaJ_7RVcsiRm72MATsPLMkigD/view?usp=sharing',
 					'_blank'
 				)
 				break
-
-			case 'System Administrator':
+			case 'Graphic Design':
 				window.open(
-					'https://drive.google.com/file/d/1wlkED3vs2IF7KGMNnMuKtLJnJy6PfmeW/view?usp=sharing',
+					'https://drive.google.com/file/d/1n5Cxxf3CB3_zCxe7xjyxcRDWjMGqH45Z/view?usp=sharing',
 					'_blank'
 				)
 				break
@@ -50,14 +42,6 @@ const DownloadModal = ({ closeModal }) => {
 				<h3 className={styles.title}>Select CV</h3>
 				<ul className={styles.options}>
 					<li
-						className={
-							selectedOption === 'Graphic Design' ? styles.selected : ''
-						}
-						onClick={() => handleOptionClick('Graphic Design')}
-					>
-						Graphic Design
-					</li>
-					<li
 						className={selectedOption === 'Frontend' ? styles.selected : ''}
 						onClick={() => handleOptionClick('Frontend')}
 					>
@@ -65,11 +49,11 @@ const DownloadModal = ({ closeModal }) => {
 					</li>
 					<li
 						className={
-							selectedOption === 'System Administrator' ? styles.selected : ''
+							selectedOption === 'Graphic Design' ? styles.selected : ''
 						}
-						onClick={() => handleOptionClick('System Administrator')}
+						onClick={() => handleOptionClick('Graphic Design')}
 					>
-						System Admin.
+						Graphic Design
 					</li>
 				</ul>
 				<button className={styles.downloadButton} onClick={handleOpenLink}>

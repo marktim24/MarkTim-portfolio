@@ -7,7 +7,7 @@ import Dropdown from '../../../components/Dropdown/Dropdown'
 import gallery from './gallery.data'
 import styles from './gallery.module.scss'
 
-export default function Gallery() {
+export default function Gallery({ excludeCardTitle }) {
 	const options = []
 	gallery.map(item => options.push(item.title))
 
@@ -43,7 +43,8 @@ export default function Gallery() {
 				<div className={styles.wrapper}>
 					{gallery
 						.find(item => item.title === direction)
-						?.galleries.map((item, index) => {
+						?.galleries.filter(item => item.title !== excludeCardTitle)
+						.map((item, index) => {
 							return (
 								<Card
 									key={`${direction}-${item.title}`}

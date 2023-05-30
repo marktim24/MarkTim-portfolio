@@ -5,8 +5,9 @@ const designSkills = [
 	{ skill: 'Figma', icon: '/icons/designIcons/Figma.svg' },
 	{ skill: 'InDesign', icon: '/icons/designIcons/InDesign.svg' },
 	{ skill: 'CorelDraw', icon: '/icons/designIcons/CorelDraw.svg' },
-	{ skill: 'After Effect', icon: '/icons/designIcons/AfterEffect.svg' },
-	{ skill: 'Premiere Pro', icon: '/icons/designIcons/PremierePro.svg' },
+	{ skill: 'AfterEffect', icon: '/icons/designIcons/AfterEffect.svg' },
+	{ skill: 'PremierePro', icon: '/icons/designIcons/PremierePro.svg' },
+	{ skill: 'Blender', icon: '/icons/designIcons/Blender.svg' },
 ]
 
 export default designSkills

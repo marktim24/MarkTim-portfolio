@@ -36,11 +36,11 @@ const Footer = ({ navigation }) => {
 					</motion.a>
 					<motion.a
 						{...motionProps}
-						href='https://www.instagram.com/markt1m24/'
+						href='https://leetcode.com/marktim_24/'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						Instagram
+						LeetCode
 					</motion.a>
 				</div>
 				<div className='line'></div>

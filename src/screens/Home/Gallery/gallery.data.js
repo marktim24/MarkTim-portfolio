@@ -3,13 +3,16 @@ import frontendSkills from '../../../components/Skills/Data/Skills/frontend.data
 
 export function getIconsForInstruments(instruments) {
 	const allSkills = [...frontendSkills, ...designSkills]
-	return instruments.map(instrument => {
+
+	return instruments.reduce((acc, instrument) => {
 		const skill = allSkills.find(
 			item => item.skill.toLowerCase() === instrument.toLowerCase()
 		)
-		console.log('instrument:', instrument, 'found skill:', skill)
-		return skill ? skill.icon : ''
-	})
+		if (skill) {
+			acc.push(skill.icon)
+		}
+		return acc
+	}, [])
 }
 
 const gallery = [
@@ -78,14 +81,15 @@ const gallery = [
 			{
 				title: 'Precise Digital',
 				hashTag: '#Social media design',
-				instruments: ['Adobe Photoshop', 'Cinema 4D'],
+				instruments: ['Adobe Photoshop', 'Blender'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PreciseMedia_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PreciseMedia.webp',
 				link: {
-					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
+					behance:
+						'https://www.behance.net/gallery/169615675/Designs-Portfolio',
 				},
-				icons: getIconsForInstruments(['Photoshop', 'Premiere Pro']),
+				icons: getIconsForInstruments(['Photoshop', 'Blender']),
 			},
 			{
 				title: 'Print Design',
@@ -95,7 +99,8 @@ const gallery = [
 					'/portfolio-db/preview/graphic-design/PrintDesign_Preview.webp',
 				cardImage: '/portfolio-db/projects/graphic-design/PrintDesign.webp',
 				link: {
-					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
+					behance:
+						'https://www.behance.net/gallery/169615675/Designs-Portfolio',
 				},
 				icons: getIconsForInstruments(['Illustrator', 'InDesign', 'Photoshop']),
 			},
@@ -103,12 +108,13 @@ const gallery = [
 				title: 'MARS Graphics',
 				previewImage:
 					'/portfolio-db/preview/graphic-design/MarsGraphics_Preview.webp',
-				instruments: ['Adobe Photoshop', 'Cinema 4D'],
+				instruments: ['Adobe Photoshop', 'Blender'],
 				cardImage: '/portfolio-db/projects/graphic-design/MarsGraphics.webp',
 				link: {
-					behance: 'https://www.behance.net/gallery/168959915/Logofolio',
+					behance:
+						'https://www.behance.net/gallery/169615675/Designs-Portfolio',
 				},
-				icons: getIconsForInstruments(['Photoshop', 'Premiere Pro']),
+				icons: getIconsForInstruments(['Photoshop', 'Blender']),
 			},
 		],
 	},
@@ -118,33 +124,34 @@ const gallery = [
 			{
 				title: 'Personal Website',
 				hashTag: '#This Website',
-				instruments: ['React JS', 'SCSS', 'Figma'],
+				instruments: ['ReactJS', 'SCSS', 'Figma'],
 				previewImage:
 					'/portfolio-db/preview/frontend/PersonalWebsite_Preview.webp',
 				cardImage: '/portfolio-db/projects/fronted/PreciseSite.webp',
 				link: {
 					github: 'https://github.com/marktim24/MarkTim-portfolio',
 				},
-				icons: getIconsForInstruments(['React JS', 'Figma']),
+				icons: getIconsForInstruments(['ReactJS', 'Figma']),
 			},
 			{
 				title: 'Precise Site',
-				instruments: ['HTML/ CSS', 'Vanilla JS', 'Figma'],
+				instruments: ['HTML/CSS', 'VanillaJS', 'Figma'],
 				previewImage:
 					'/portfolio-db/preview/graphic-design/PreciseSite_Preview.webp',
 				cardImage: '/portfolio-db/projects/frontend/PreciseSite.webp',
 				link: {
-					github: 'https://www.behance.net/gallery/168959915/Logofolio',
-					deploy: 'https://www.behance.net/gallery/168959915/Logofolio',
+					behance:
+						'https://www.behance.net/gallery/171643495/Presice-Website-design',
+					github: 'https://github.com/marktim24/Precise-Site',
 				},
-				icons: getIconsForInstruments(['HTML/ CSS', 'Vanilla JS', 'Figma']),
+				icons: getIconsForInstruments(['HTML/CSS', 'VanillaJS', 'Figma']),
 			},
 			{
 				title: 'Age Calculator',
 				hashTag: '#Component',
 				previewImage:
 					'/portfolio-db/preview/frontend/AgeComponent_Preview.webp',
-				instruments: ['React JS', 'SCSS'],
+				instruments: ['ReactJS', 'SCSS'],
 				cardImage: '/portfolio-db/projects/frontend/AgeComponent.webp',
 				description:
 					'React Vite Age Calculator component developed as a Daily Frontend Challenge',
@@ -152,7 +159,7 @@ const gallery = [
 					github: 'https://github.com/marktim24/age-calculator-app-main',
 					project: 'https://marktim24.github.io/age-calculator-app-main/',
 				},
-				icons: getIconsForInstruments(['React JS']),
+				icons: getIconsForInstruments(['ReactJS']),
 			},
 			{
 				title: 'Palorinne Construction',
@@ -164,19 +171,19 @@ const gallery = [
 					github: 'https://github.com/marktim24/PalorinneOy-Landing-Page',
 					project: 'https://marktim24.github.io/PalorinneOy-Landing-Page/',
 				},
-				icons: getIconsForInstruments(['HTML/ CSS', 'JQuery', 'Figma']),
+				icons: getIconsForInstruments(['HTML/CSS', 'JQuery', 'Figma']),
 			},
 			{
 				title: 'Qubble Data',
 				hashTag: '#Landing Page',
-				instruments: ['HTML/CSS', 'Vanilla JS', 'Adobe XD'],
+				instruments: ['HTML/CSS', 'VanillaJS', 'AdobeXD'],
 				previewImage: '/portfolio-db/preview/frontend/Qubble_Preview.webp',
-				cardImage: '/portfolio-db/projects/frontend/Palorinne.webp',
+				cardImage: '/portfolio-db/projects/frontend/Qubble.webp',
 				link: {
 					github: 'https://github.com/marktim24/Data-analytics-Landing',
 					project: 'https://marktim24.github.io/Data-analytics-Landing/',
 				},
-				icons: getIconsForInstruments(['HTML/ CSS', 'Vanilla JS', 'XD']),
+				icons: getIconsForInstruments(['HTML/CSS', 'VanillaJS', 'XD']),
 			},
 			{
 				title: 'memoria del futuro',
@@ -185,9 +192,9 @@ const gallery = [
 				previewImage: '/portfolio-db/preview/frontend/Memoria_Preview.webp',
 				cardImage: '/portfolio-db/projects/frontend/Memoria.webp',
 				link: {
-					Coming_Soon: '',
+					Coming_Soon: ' ',
 				},
-				icons: getIconsForInstruments(['NEXT JS', 'SCSS', 'Figma']),
+				icons: getIconsForInstruments(['NextJS', 'SCSS', 'Figma']),
 			},
 		],
 	},
