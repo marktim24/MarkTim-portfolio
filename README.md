@@ -4,6 +4,8 @@ Welcome to the GitHub repository of my portfolio! This project serves as a compr
 
 The live version of the portfolio is hosted on Netlify and can be accessed [here](https://marktim.netlify.app/).
 
+![preview Image](/preview.webp)
+
 ## 🚀 Features
 
 The portfolio includes the following sections:
@@ -44,6 +46,7 @@ To run this portfolio project locally, you'll need Node.js and Yarn installed on
 ### Steps:
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/marktim24/MarkTim-portfolio.git
 ```
@@ -55,23 +58,29 @@ cd MarkTim-portfolio
 ```
 
 3. Install the dependencies:
+
 ```bash
 yarn
 ```
 
 4. Start the local development server:
+
 ```bash
 yarn dev
 ```
+
 Your local copy of the project should now be running at http://localhost:3000.
 
 ## 👥 Contributing
+
 While this portfolio is a personal project, I'm open to suggestions and improvements. Feel free to fork the repository and submit a pull request or create an issue.
 
 ## 📜 License
+
 This project is licensed under the MIT License. For more details, see the LICENSE file in this repository.
 
 ## 📞 Contact
+
 If you'd like to contact me, you can reach out at:
 
 Email: marktimoshevich@gmail.com
