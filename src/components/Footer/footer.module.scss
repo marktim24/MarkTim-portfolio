@@ -1,0 +1,10 @@
+.links {
+	@apply w-3/4 flex flex-row justify-between text-2xl underline;
+
+	> a {
+		&::before {
+			content: url('/link_icon.svg');
+			margin-right: 8px;
+		}
+	}
+}

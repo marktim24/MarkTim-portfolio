@@ -1,0 +1,11 @@
+.headerLink,
+.headerLinkActive {
+	@apply text-center text-white text-3xl font-normal tracking-wide px-[25px] py-[7px] rounded-[25px] border border-zinc-300 space-x-10;
+	&:hover {
+		@apply text-black opacity-90 bg-white;
+	}
+}
+
+.headerLinkActive {
+	@apply text-black font-medium bg-white;
+}
